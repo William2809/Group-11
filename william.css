@@ -37,7 +37,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-top: 40px;
+  margin-top: 8px;
   margin-bottom: 20px;
   font-size: 32px;
 }
@@ -62,7 +62,7 @@ body {
 .desc {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
 }
 
 .biography {
@@ -118,7 +118,7 @@ body {
 
 /* Expertise */
 .expertise {
-  padding: 80px 0;
+  padding: 40px 0;
   display: flex;
   flex-direction: column;
 }
@@ -169,14 +169,14 @@ body {
 
 /* projects */
 .featured-projects {
-  margin-top: 80px;
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 
 .featured-projects h2 {
   color: white;
   font-size: 28px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .project {
@@ -186,7 +186,6 @@ body {
 }
 
 .project-frame {
-  max-width: 640px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -214,17 +213,17 @@ body {
   display: flex;
   justify-content: space-between;
   height: 28.8px;
+  margin-left: 24px;
 }
 
 .icon-wrapper {
-  width: 28.8px;
   height: 28.8px;
+  display: flex;
 }
 
 .tools {
   width: 28.8px;
   height: 28.8px;
-  margin-left: 24px;
 }
 
 .open {
@@ -376,17 +375,18 @@ footer h2 {
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    gap: 40px;
   }
-
-  .expertise {
-  }
-
   .skills {
     flex-direction: row;
   }
 
   .skill {
     flex: 1;
+  }
+
+  .project-frame {
+    width: 620px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -397,6 +397,7 @@ footer h2 {
     font-size: 48px;
     padding-top: 40px;
     padding-bottom: 20px;
+    margin-top: 20px;
   }
   .sub-intro {
     gap: 40px;
@@ -426,6 +427,28 @@ footer h2 {
     flex-direction: row;
     gap: 40px;
   }
+
+  .project-icons {
+    height: 48px;
+  }
+
+  .icon-wrapper {
+    height: 48px;
+  }
+
+  .tools {
+    width: 48px;
+    height: 48px;
+  }
+
+  .open {
+    width: 48px;
+    height: 48px;
+  }
+
+  .open img {
+    transform: scale(100%);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -442,10 +465,15 @@ footer h2 {
     border-bottom: 2px solid #aee1e7;
     flex-direction: row;
     gap: 40px;
+    padding: 80px 0;
   }
 
   .expertise-desc {
     min-width: 260px;
     max-width: 300px;
+  }
+
+  .featured-projects {
+    margin-top: 80px;
   }
 }
