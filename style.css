@@ -8,10 +8,13 @@
 /* Default */
 body {
   background-color: #ebe1ce;
+  margin: auto;
+  max-width: 1600px;
 }
 
 section {
   margin: 0 20px;
+  max-width: 1500px;
 }
 
 .logo {
@@ -23,12 +26,14 @@ section {
 }
 
 nav {
+  max-width: 1500px;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 20px 0;
-  margin: 0 20px;
   font-size: 16px;
+  margin: 0 20px;
 }
 
 .navitems {
@@ -66,13 +71,30 @@ nav {
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+  section {
+    margin: 0 80px;
+  }
+  nav {
+    font-size: 18px;
+    margin: 0 80px;
+  }
+
   .navbar {
     flex-wrap: wrap;
   }
   .navbar a {
-    margin-bottom: 0.5rem;
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    margin: 0 120px;
+  }
+  nav {
+    font-size: 18px;
+    margin: 0 120px;
   }
 }
