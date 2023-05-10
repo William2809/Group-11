@@ -200,7 +200,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: end;
-  /* width: 100%; */
 }
 
 .project-img img {
@@ -275,40 +274,23 @@ body {
 
 /* footer */
 footer {
-  background-color: #68878b;
-  margin-top: 40px;
-  width: 100%;
-  padding: 0 20px;
+  background-color: #465a5c;
 }
 
 footer h2 {
-  text-align: center;
-  font-size: 28px;
-  padding: 10px;
   color: white;
 }
 
 .bottom-nav {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
   border-top: 2px solid #aee1e7;
-  padding: 10px;
 }
 
 .bottom-nav h3 {
   color: #aee1e7;
-  font-weight: 600;
-  font-size: 24px;
-  padding: 4px;
 }
 
 .bottom-nav a {
   color: white;
-  text-decoration: none;
-  font-size: 18px;
 }
 
 .bottom-nav a.active {
@@ -319,34 +301,8 @@ footer h2 {
   color: #aee1e7;
 }
 
-.bottom-navitems {
-  width: 100%;
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-}
-
-.bottom-icons {
-  transform: scale(60%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  gap: 12px;
-  padding: 4px;
-}
-
 .copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   color: #d7f0f3;
-  font-size: 14px;
-  padding-bottom: 20px;
-}
-
-@media screen and (min-width: 640px) {
 }
 
 @media screen and (min-width: 768px) {
@@ -388,6 +344,10 @@ footer h2 {
   .project-frame {
     width: 620px;
   }
+
+  .featured-projects {
+    margin-bottom: 80px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .sub-intro {
@@ -416,9 +376,7 @@ footer h2 {
     width: 48px;
     height: 48px;
   }
-  .bottom-icons {
-    transform: scale(100%);
-  }
+
   .profile {
     width: 200px;
     height: 200px;
