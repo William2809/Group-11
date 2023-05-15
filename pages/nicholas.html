@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/src/nicholas.css">
+    <link rel="stylesheet" href="/src/output.css">
+
+    <script defer src="/script.js"></script>
+
+</head>
+
+<body>
+    <nav class="text-[18px] lg:text-[20px] sticky top-0 z-20 bg-[#434b4e]">
+        <div class="navbar py-3 md:py-5 px-5 md:px-0 max-w-[1500px] flex items-center justify-center z-20 bg-[#434b4e]">
+            <div class="text-[#cdcdc0] flex-1 basis-[140px] pr-3">
+                <h1 class="text-[24px] font-semibold py-1">Group 11</h1>
+            </div>
+            <div class="hidden md:flex items-center gap-3 md:gap-5 ">
+                <a class="text-[#cdcdc0] hover:text-[#aee1e7] transition-all" href="index.html">Home</a>
+                <a class="text-[#cdcdc0] hover:text-[#aee1e7] transition-all" href="cecile.html">Cécile</a>
+                <a class="text-[#aee1e7] hover:text-[#aee1e7] transition-all" href="nicholas.html">Nicholas</a>
+                <a class="text-[#cdcdc0] hover:text-[#aee1e7] transition-all" href="william.html">William</a>
+            </div>
+
+            <div class="nav-icon flex md:hidden text-white items-center text-center" id="nav-icon">
+                <span class="hamburger text-[24px] w-[24px]" id="hamburger">&#9776;</span>
+                <span class="close text-[28px] w-[24px]" id="close">&times;</span>
+            </div>
+        </div>
+        <div class="navitems-dropdown bg-[#2E3436] flex w-full items-center -z-10 absolute top-[-200%] right-0 flex-col transition-all duration-500 md:hidden"
+            id="nav-items">
+            <a class="p-2 transition-all text-[#cdcdc0] hover:text-[#aee1e7]" href="index.html">Home</a>
+            <a class="p-2 transition-all text-[#cdcdc0] hover:text-[#aee1e7]" href="cecile.html">Cécile</a>
+            <a class="p-2 transition-all text-[#aee1e7] hover:text-[#cdcdc0]" href=" nicholas.html">Nicholas</a>
+            <a class="p-2  transition-all  text-[#cdcdc0] hover:text-[#aee1e7]" href=" william.html">William</a>
+        </div>
+    </nav>
+
+    <section class="selfintro">
+        <div>
+            <h1>
+                Hi, I’m Nicholas Yassuo Ito, a electrical engineering student with computer engineering emphasis.
+            </h1>
+        </div>
+        <div class="sub-intro">
+            <div class="profile-frame">
+                <img class="profile" src="/assets/nicholas/profile.jpg" alt="">
+            </div>
+
+            <div class="bio">
+                <div>
+                    <h3>Biography</h3>
+                    <p> A 23 years old electrical engineering at University of São Paulo in Brazil.
+                        A Mathematics enthusiast with some expertise in oriented object programming
+                        and a coffee addiction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="HobbiesAndInterests">
+        <div>
+            <h3>
+                Hobbies and Interests
+            </h3>
+            <div class="hobbies">
+                <div class="hobby">
+                    <div class="hobbies-desc">
+                        <img class="hobby-icon" alt="Coffee icon" src="/assets/nicholas/coffee.png">
+                        <h4>
+                            Coffee Shops
+                        </h4>
+                        <p>
+                            Going out and enjoying a nice cup of coffee.
+                        </p>
+                    </div>
+                </div>
+                <div class="hobby">
+                    <div class="hobbies-desc">
+                        <img class="hobby-icon" alt="Game icon" src="/assets/nicholas/game.png">
+                        <h4>
+                            Video games
+                        </h4>
+                        <p>
+                            Into single player and multiplayer competitive gaming.
+                        </p>
+                    </div>
+                </div>
+                <div class="hobby">
+                    <div class="hobbies-desc">
+                        <img class="hobby-icon" alt="Sport icon" src="/assets/nicholas/kungfu.png">
+                        <h4>
+                            Martial Arts
+                        </h4>
+                        <p>
+                            Kung fu black belt Northern Shaolin style.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="past-projects">
+        <h2>
+            Featured Projects
+        </h2>
+        <div class="projects">
+            <div class="project">
+                <div class="project-desc">
+
+                    <h4>
+                        Full-stack application
+                    </h4>
+                    <h3>
+                        Online covid vaccine registration
+                    </h3>
+
+                    <p>
+                        Online system with the main purpose
+                        to make the registration for the
+                        covid vaccine multiple doses.
+                    </p>
+                    <div class="icons">
+                        <img class="project-icon" alt="health icon" src="/assets/nicholas/health.png">
+                        <img class="project-icon" alt="info icon" src="/assets/nicholas/info.png">
+                        <img class="project-icon" alt="vaccine icon" src="/assets/nicholas/vaccine.png">
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+
+                <div class="project-desc">
+
+                    <h4>
+                        Discord Application
+                    </h4>
+                    <h3>
+                        Single player RPG
+                    </h3>
+
+                    <p>
+                        Explore and have fun with a interactive
+                        adventure-text like RPG.
+                    </p>
+                    <div class="icons">
+                        <img class="project-icon" alt="bot icon" src="/assets/nicholas/bot.png">
+                        <img class="project-icon" alt="text icon" src="/assets/nicholas/text.png">
+                        <img class="project-icon" alt="game icon" src="/assets/nicholas/game.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#465a5c] pb-4">
+        <h2 class="text-white font-bold text-center text-[28px] p-4">Web Design and Programming</h2>
+        <div
+            class="bottom-nav flex flex-col justify-center w-full items-center border-t-[2px] border-solid border-[#cdcdc0] gap-2 p-4 md:flex-row md:justify-between md:py-4">
+            <h3 class="text-[#cdcdc0] text-[24px] py-1 font-semibold md:w-[168px]">Group 11</h3>
+            <div class="bottom-navitems flex justify-center w-full md:w-min gap-3">
+                <a class="active text-[#cdcdc0] hover:text-[#aee1e7] text-[16px]" href="index.html">Home</a>
+                <a class="text-[#cdcdc0] hover:text-[#aee1e7] text-[16px]" href="cecile.html">Cécile</a>
+                <a class="text-[#aee1e7] hover:text-[#aee1e7] text-[16px]" href="nicholas.html">Nicholas</a>
+                <a class="text-[#cdcdc0] hover:text-[#aee1e7]" href=" william.html">William</a>
+            </div>
+            <div
+                class="bottom-icons flex justify-center items-center w-full gap-3 p-1 scale-[60%] md:w-min md:p-0 md:scale-[100%] ">
+                <a href="https://www.shibaura-it.ac.jp/en/" target="_blank">
+                    <img src="/assets/general/link.svg" alt="link">
+                </a>
+                <a href="https://www.instagram.com/shibaura_instituteoftechnology/" target="_blank">
+                    <img src="/assets/general/instagram-bottom.svg" alt="instagram">
+                </a>
+                <a href="mailto:global-admission@ow.shibaura-it.ac.jp" target="_blank">
+                    <img src="/assets/general/mail-bottom.svg" alt="email">
+                </a>
+
+            </div>
+        </div>
+        <p class="text-center text-[12px] text-[#cdcdc0] flex justify-center items-center pb-5">
+            © 2023 Shibaura Institute of Technology
+        </p>
+    </footer>
+    </div>
+
+</body>
+
+</html>

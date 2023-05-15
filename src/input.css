@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  img,
+  video {
+    max-width: none;
+    height: none;
+  }
+}
+
+img {
+  max-width: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 68px;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: #232323;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+}
+
+.fuji-bg {
+  height: calc(100vh - 68px);
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-animation {
+  animation: float 2s ease-in-out infinite;
+}
+
+.float-animation:hover {
+  animation-play-state: paused;
+}
+
+.intro h1 {
+  background: linear-gradient(
+    270deg,
+    #05daf7 7.83%,
+    #6dcb6d 30.66%,
+    #e6956e 56.07%,
+    #58ccf7 77.16%,
+    #55beb1 99.9%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Default */
+
+section {
+  padding: 0 20px;
+  max-width: 1600px;
+}
+
+.hamburger {
+  display: block;
+}
+
+.close {
+  display: none;
+}
+
+.hidden-hamburger {
+  display: none;
+}
+
+.display-close {
+  display: block;
+}
+
+footer {
+  padding: 0 20px;
+}
+
+/* footer */
+.show {
+  top: 100%;
+}
+
+@media screen and (min-width: 500px) {
+  .culture {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  section {
+    padding: 0 40px;
+  }
+  .navbar {
+    padding: 20px 40px;
+  }
+  footer {
+    padding: 0 40px;
+  }
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .fuji-bg {
+    height: calc(100vh - 84px);
+  }
+
+  section {
+    padding: 0 80px;
+  }
+  nav {
+    padding: 0 80px;
+  }
+  footer {
+    padding: 0 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding: 0 120px;
+  }
+
+  .expertise {
+    padding: 0;
+    margin: 0 120px;
+  }
+
+  nav {
+    padding: 0 120px;
+  }
+  footer {
+    padding: 0 120px;
+  }
+}

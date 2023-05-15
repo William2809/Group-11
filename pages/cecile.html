@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--without it, mobile devices will render the website as a desktop page, which will look distorted and difficult to read on smaller screens-->
+    <title>Cécile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--need to put my onw CSS first so that it override the default CSS of Bootstrap (reboot.css particularly)-->
+    <link rel="stylesheet" href="/src/cecile.css">
+    <link rel="stylesheet" href="/src/output.css">
+    <!-- <link rel="stylesheet" href="/src/output.css"> -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script defer src="/script.js"></script>
+
+</head>
+
+<body>
+    <nav class="text-[18px] lg:text-[20px] sticky top-0 z-20 bg-[#9cedf8]">
+        <div class="navbar py-3 md:py-5 px-5 md:px-0 max-w-[1500px] flex items-center justify-center z-20 bg-[#9cedf8]">
+            <div class="text-[#425FFA] flex-1 basis-[140px] pr-3">
+                <h1 class="text-[24px] font-semibold py-1">Group 11</h1>
+            </div>
+            <div class="hidden md:flex items-center gap-3 md:gap-5 ">
+                <a class="text-[#577174] hover:text-[#425FFA] transition-all" href="index.html">Home</a>
+                <a class="text-[#425FFA] hover:text-[#425FFA] transition-all" href="cecile.html">Cécile</a>
+                <a class="text-[#577174] hover:text-[#425FFA] transition-all" href="nicholas.html">Nicholas</a>
+                <a class="text-[#577174] hover:text-[#425FFA] transition-all" href="william.html">William</a>
+            </div>
+
+            <div class="nav-icon flex md:hidden text-[#425FFA] items-center text-center" id="nav-icon">
+                <span class="hamburger text-[24px] w-[24px]" id="hamburger">&#9776;</span>
+                <span class="close text-[28px] w-[24px]" id="close">&times;</span>
+            </div>
+        </div>
+        <div class="navitems-dropdown bg-[#64CCDA] flex w-full items-center -z-10 absolute top-[-200%] right-0 flex-col transition-all duration-500 md:hidden"
+            id="nav-items">
+            <a class="p-2 transition-all text-[#577174] hover:text-[#425FFA]" href="index.html">Home</a>
+            <a class="p-2 transition-all text-[#425FFA] hover:text-[#425FFA]" href="cecile.html">Cécile</a>
+            <a class="p-2 transition-all text-[#577174] hover:text-[#425FFA]" href=" nicholas.html">Nicholas</a>
+            <a class="p-2  transition-all  text-[#577174] hover:text-[#425FFA]" href=" william.html">William</a>
+        </div>
+    </nav>
+
+    <h2 class="font-medium text-[28px]" id="greeting">Hi, I'm Cécile de Lapasse, a computer science student focusing on
+        back-end
+        developing.</h2>
+    <div class="ligne">
+        <img id="mypicture" src="/assets/cecile/moi skytree.jpg" alt="My photo">
+        <div id="aboutme">
+            <h3 class="font-medium text-[28px]">About me</h3>
+            <p>I'm a 22 year-old engineering student at TELECOM Nancy in the north of France.</p>
+        </div>
+    </div>
+
+    <div id="boxes" class="ligne">
+        <div class="colonne">
+            <section id="country">
+                <div class="line">
+                    <h3 class="font-medium text-[28px]">Country</h3>
+                    <img id="flag" class="icon_right" alt="French flag icon" src="/assets/cecile/france_flag.png">
+                </div>
+                <p>I come from France, you can read an introduction in the general page! It has 4 seasons and many
+                    different landscapes and climates because of it's particular location: there is the Atlantic ocean,
+                    the Mediterranean see, mountain chains like the Alpes... And there’s a lot of ancient roman
+                    monuments in the South where I’m from, like this aqueduct.</p>
+                <img id="aqueduct" class="picture img-fluid" alt="Aqueduct" src="/assets/cecile/pontdugard.jpg">
+            </section>
+
+            <div class="line">
+                <section id="whyjapan">
+                    <h3 class="font-medium text-[28px]">Why I came to Japan</h3>
+                    <p>Since elementary school, I have watch anime and therefore been interested in Japanese
+                        culture.<br>That is also why I have been a staff at a Japanese culture convention called
+                        Anim’Est that gathered more than 10,000 people last year, and is solely organized by students
+                        from different engineering schools, mine included.</p>
+                </section>
+
+                <section>
+                    <h3 class="font-medium text-[28px]">My lovely cat</h3>
+                    <img class="picture" alt="My beautiful cat" src="/assets/cecile/yuki1.jpg">
+                    <p id="mycat">Her name is Yuki.</p>
+                </section>
+            </div>
+        </div>
+
+        <div class="colonne">
+            <section id="interests">
+                <div class="line">
+                    <h3 class="font-medium text-[28px]">Interests</h3>
+                    <img class="icon_right" alt="Hobbie icon" src="/assets/cecile/harry_potter.png">
+                </div>
+                <div class="line">
+                    <div class="colonne">
+                        <img class="icon" alt="Piano icon" src="/assets/cecile/piano_sticker.png">
+                        <p>Piano<br>(mostly self-taught)</p>
+                    </div>
+                    <div class="colonne">
+                        <img class="icon" alt="Video game icon" src="/assets/cecile/minecraft.png">
+                        <p>Video games<br>(Action-adventure)</p>
+                    </div>
+                    <div class="colonne">
+                        <img class="icon" alt="Movie icon" src="/assets/cecile/ring_sticker.png">
+                        <p>Movies<br>(SF, Fantasy)</p>
+                    </div>
+                    <div class="colonne">
+                        <img class="icon" alt="Eating icon" src="/assets/cecile/chocolate.png">
+                        <p>Eating sweets<br>(anything)</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="photos">
+                <h3 class="font-medium text-[28px]">I also like to take photos</h3>
+                <div id="pictures">
+                    <img class="small_picture img-fluid" alt="Ferris Wheel" src="/assets/cecile/grande roue.jpg">
+                    <img class="small_picture img-fluid" alt="Golden hour in Portugal"
+                        src="/assets/cecile/portugal soleil 2.jpg">
+                    <img class="small_picture img-fluid" alt="Pink flowers" src="/assets/cecile/rose2.jpg">
+                    <img class="small_picture img-fluid" alt="Buttercup flower" src="/assets/cecile/bouton-d'or.jpg">
+                    <img class="small_picture img-fluid" alt="Colorful umbrellas shading a street"
+                        src="/assets/cecile/umbrellas.jpg">
+                    <img class="small_picture img-fluid" alt="Sunset" src="/assets/cecile/cloudsun.jpg">
+                </div>
+            </section>
+
+            <section>
+                <div id="darkpast" class="line">
+                    <h3 class="font-medium text-[28px]">My dark past</h3>
+                    <img class="icon_right" alt="School icon" src="/assets/cecile/school.png">
+                </div>
+                <p>I’m in my Master’s first year and I got the opportunity to be one of the two people that were able to
+                    go to Shibaura-IT.<br>
+                    Before entering engineering school, I did something specific to France which is called a “classe
+                    préparatoire aux grandes écoles”, which is basically two-year intensive classes on Mathematics,
+                    Physics, Chemistry, Industrial Science, Philosophy, English...<br>That was hard haha</p>
+            </section>
+        </div>
+    </div>
+
+    <footer class="bg-[#465a5c] pb-4">
+        <h2 class="text-white font-bold text-center text-[28px] p-4">Web Design and Programming</h2>
+        <div
+            class="bottom-nav flex flex-col justify-center w-full items-center border-t-[2px] border-solid border-[#aee1e7] gap-2 p-4 md:flex-row md:justify-between md:py-4">
+            <h3 class="text-[#aee1e7] text-[24px] py-1 font-semibold md:w-[168px]">Group 11</h3>
+            <div class="bottom-navitems flex justify-center w-full md:w-min gap-3">
+                <a class="active text-white hover:text-[#aee1e7] text-[16px]" href="index.html">Home</a>
+                <a class="text-white hover:text-[#aee1e7] text-[16px]" href="cecile.html">Cécile</a>
+                <a class="text-white hover:text-[#aee1e7] text-[16px]" href="nicholas.html">Nicholas</a>
+                <a class="text-[#aee1e7] hover:text-[#aee1e7]" href=" william.html">William</a>
+            </div>
+            <div
+                class="bottom-icons flex justify-center items-center w-full gap-3 p-1 scale-[60%] md:w-min md:p-0 md:scale-[100%] ">
+                <a href="https://www.shibaura-it.ac.jp/en/" target="_blank">
+                    <img src="/assets/general/link.svg" alt="link">
+                </a>
+                <a href="https://www.instagram.com/shibaura_instituteoftechnology/" target="_blank">
+                    <img src="/assets/general/instagram-bottom.svg" alt="instagram">
+                </a>
+                <a href="mailto:global-admission@ow.shibaura-it.ac.jp" target="_blank">
+                    <img src="/assets/general/mail-bottom.svg" alt="email">
+                </a>
+
+            </div>
+        </div>
+        <p class="text-center" id="icon_src">Icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+        <p class="text-center text-[12px] text-[#d7f0f3] flex justify-center items-center pb-5">
+            © 2023 Shibaura Institute of Technology
+        </p>
+    </footer>
+</body>
+
+</html>

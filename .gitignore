@@ -1,0 +1,16 @@
+# Ignore Node modules
+node_modules/
+
+# Ignore build artifacts and other generated files
+dist/
+build/
+*.log
+*.tmp
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+
+# Ignore package lock files
+package-lock.json
+yarn.lock

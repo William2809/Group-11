@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William</title>
+    <link rel="stylesheet" href="/src/output.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script defer src="/script.js"></script>
+</head>
+
+<body class="bg-[#252525] m-auto max-w-[1600px]">
+    <nav class="text-[18px] lg:text-[20px] sticky top-0 z-20 bg-[#252525]">
+        <div class="navbar py-3 md:py-5 px-5 md:px-0 max-w-[1500px] flex items-center justify-center z-20 bg-[#252525]">
+            <div class="text-[#aee1e7] flex-1 basis-[140px] pr-3">
+                <h1 class="text-[24px] font-semibold py-1">Group 11</h1>
+            </div>
+            <div class="hidden md:flex items-center gap-3 md:gap-5 ">
+                <a class="text-[#577174] hover:text-[#aee1e7] transition-all" href="index.html">Home</a>
+                <a class="text-[#577174] hover:text-[#aee1e7] transition-all" href="cecile.html">Cécile</a>
+                <a class="text-[#577174] hover:text-[#aee1e7] transition-all" href="nicholas.html">Nicholas</a>
+                <a class="text-[#aee1e7] hover:text-[#aee1e7] transition-all" href="william.html">William</a>
+            </div>
+
+            <div class="nav-icon flex md:hidden text-white items-center text-center" id="nav-icon">
+                <span class="hamburger text-[24px] w-[24px]" id="hamburger">&#9776;</span>
+                <span class="close text-[28px] w-[24px]" id="close">&times;</span>
+            </div>
+        </div>
+        <div class="navitems-dropdown bg-[#344345] flex w-full items-center -z-10 absolute top-[-200%] right-0 flex-col transition-all duration-500 md:hidden"
+            id="nav-items">
+            <a class="p-2 transition-all text-[#68878b] hover:text-[#aee1e7]" href="index.html">Home</a>
+            <a class="p-2 transition-all text-[#68878b] hover:text-[#aee1e7]" href="cecile.html">Cécile</a>
+            <a class="p-2 transition-all text-[#68878b] hover:text-[#aee1e7]" href=" nicholas.html">Nicholas</a>
+            <a class="p-2  transition-all  text-[#aee1e7] hover:text-[#aee1e7]" href=" william.html">William</a>
+        </div>
+    </nav>
+
+
+    <section class="intro">
+        <div>
+            <h1
+                class="mt-2 mb-5 text-[32px] font-bold md:text-[40px] md:mt-5 lg:text-[48px] lg:pt-10 lg:pb-5 lg:mt-5 xl:mb-20">
+                Hi, I'm William Huang, a computer science student and front-end developer.
+            </h1>
+        </div>
+        <div class="sub-intro flex flex-col gap-5 lg:flex-row lg:gap-10  xl:mb-[100px]">
+            <div class="profile-frame flex justify-center">
+                <img class="profile w-[140px] h-[140px] md:w-[160px] md:h-[160px] lg:w-[200px] lg:h-[200px]"
+                    src="/assets/william/profile.png" alt="">
+            </div>
+            <div class="desc flex flex-col md:flex-row 
+                gap-4
+                md:w-full md:justify-between md:gap-10">
+                <div class="biography flex gap-5 md:max-w-[540px] lg:text-[28px]">
+                    <div>
+                        <h3 class="text-[#05daf7] font-semibold pb-3 text-[20px] md:text-[24px] lg:text-[28px]">
+                            About Me</h3>
+                        <p class="text-[#68878b] font-medium text-[14px] md:text-[16px] lg:text-[18px]">I'm a 20
+                            years old software
+                            developer from
+                            Indonesia. With two years of hands-on
+                            experience
+                            in <a class="text-[#00e2ff]">Laravel</a>, and <a class="text-[#ff2400]">React</a>, a
+                            dedicated coding
+                            enthusiast
+                            currently enriching skills in student exchange program.</p>
+                    </div>
+                </div>
+                <div class="connect md:pl-5">
+                    <h3 class="text-[#05daf7]  font-semibold pb-3 w-max text-[20px] md:text-[24px] lg:text-[28px]">
+                        Lets Connect
+                    </h3>
+                    <div class="link-icons flex items-center gap-2 lg:gap-4">
+                        <a target="_blank" href="https://line.me/ti/p/UhuzRvY2-O"
+                            class="link-icon lg:w-[48px] lg:h-[48px] scale-[82%] lg:scale-[100%]">
+                            <img src="/assets/william/line.svg" alt="line">
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/william_h28/"
+                            class="link-icon lg:w-[48px] lg:h-[48px] scale-[82%] lg:scale-[100%]">
+                            <img src="/assets/william/instagram.svg" alt="instagram">
+                        </a>
+                        <a target="_blank" href="mailto:william28.office@gmail.com"
+                            class="link-icon lg:w-[48px] lg:h-[48px] scale-[82%] lg:scale-[100%]">
+                            <img src="/assets/william/mail.svg" alt="email">
+                        </a>
+                        <a target="_blank" href="https://wa.me/6282177150569"
+                            class="link-icon lg:w-[48px] lg:h-[48px] scale-[82%] lg:scale-[100%]">
+                            <img src="/assets/william/whatsapp.svg" alt="whatsapp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="expertise py-10 flex flex-col xl:border-t-2 xl:border-b-2 xl:border-solid xl:border-[#aee1e7] xl:flex-row xl:gap-10 xl:py-20">
+        <div class="expertise-desc mb-5 xl:min-w-[260px] xl:max-w-[300px]">
+            <h2 class="text-white text-[28px] font-semibold">Expertise</h2>
+            <p class="pt-2 text-[#68878b] text-[16px] font-medium">Build designs and convert creative concepts into
+                engaging user experiences using various toolkits.
+            </p>
+        </div>
+
+        <div class="skills flex flex-col gap-5 md:flex-row">
+            <div class="skill p-6 rounded-[12px] border-[2px] border-solid border-[#aee1e7] md:flex-1">
+                <img src="/assets/william/design.svg" alt="code">
+                <div class="skill-desc">
+                    <h3 class="text-[#05daf7] text-[24px] font-semibold">
+                        Website Design
+                    </h3>
+                    <p class="text-[#68878b] font-normal text-[14px]">
+                        Create visually appealing and user-friendly websites that effectively showcase your brand
+                        and engage your audience. Let me help you build a strong online presence and attract more
+                        customers to your business.
+                    </p>
+                </div>
+            </div>
+            <div class="skill p-6 rounded-[12px] border-[2px] border-solid border-[#aee1e7] md:flex-1">
+                <img src="/assets/william/code.svg" alt="code">
+                <div class="skill-desc">
+                    <h3 class="text-[#05daf7] text-[24px] font-semibold">
+                        Front-end Development
+                    </h3>
+                    <p class="text-[#68878b] font-normal text-[14px]">
+                        creating visually appealing and responsive websites that are both user-friendly and
+                        functional. Let
+                        me help you enhance your online presence and deliver a seamless user experience to your
+                        audience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-projects mt-5 mb-10 md:mb-20 xl:mt-20">
+        <h2 class="text-white text-[28px] mb-5 font-semibold">
+            Featured Projects
+        </h2>
+        <div class="projects flex flex-col gap-10 ">
+            <div class="project flex flex-col gap-5 lg:flex-row lg:gap-10">
+                <div
+                    class="project-frame flex flex-col gap-5 bg-[#344345] rounded-[20px] px-3 pt-3 min-w-[340px]  w-full md:w-[620px] lg:min-w-[420px]">
+                    <div class="project-icons flex justify-between h-[28.8px] ml-6 lg:h-[48px]">
+                        <div class="icon-wrapper h-[28.8px] lg:h-[48px] flex">
+                            <img class="tools w-[28.8px] h-[28.8px] lg:h-[48px] lg:w-[48px]"
+                                src="/assets/william/figma.svg" alt="figma icon">
+                        </div>
+                        <a href="https://www.figma.com/file/N7JI07Bz8bv08LdZhfWwya/Weeb-List?type=design&node-id=807%3A519&t=BGNQO3rTOrQGU8f9-1"
+                            target="_blank"
+                            class="open flex justify-center items-center bg-[#577174] w-[28.8px] h-[28.8px] lg:w-[48px] lg:h-[48px] rounded-[8px]">
+                            <img class="m-2 scale-[60%] lg:scale-[100%]" src="/assets/william/open.svg" alt="open">
+                        </a>
+                    </div>
+                    <div class="project-img flex justify-center items-end">
+                        <img class="max-w-[506px] w-full px-8" src="/assets/william/project1.png" alt="project 1">
+                    </div>
+                </div>
+                <div class="project-desc flex flex-col gap-2 max-w-[620px]">
+                    <h4 class="text-[#68878b] text-[20px] font-semibold">
+                        Website Design
+                    </h4>
+                    <h3 class="text-white text-[28px] font-semibold">
+                        Anime Watchlist Design
+                    </h3>
+                    <p class="text-[#68878b] text-[14px] md:text-[16px] lg:text-[18px] font-normal">
+                        Elevate your anime watching experience with a beautifully designed watchlist that lets you
+                        keep track of your favorite shows and discover new ones. With Anime Watchlist Design, you
+                        can organize your anime collection in style and never miss a beat.
+                    </p>
+                </div>
+            </div>
+            <div class="project flex flex-col gap-5 lg:flex-row lg:gap-10">
+                <div
+                    class="project-frame flex flex-col gap-5 bg-[#344345] rounded-[20px] px-3 pt-3 min-w-[340px]  w-full md:w-[620px] lg:min-w-[420px]">
+                    <div class="project-icons flex justify-between h-[28.8px] ml-6 lg:h-[48px]">
+                        <div class="icon-wrapper h-[28.8px] lg:h-[48px] flex">
+                            <img class="tools lg:w-[48px] h-[48px]" src="/assets/william/figma.svg" alt="figma icon">
+                            <img class="tools lg:w-[48px] h-[48px]" src="/assets/william/laravel.svg"
+                                alt="laravel icon">
+                            <img class="tools lg:w-[48px] h-[48px]" src="/assets/william/tailwind.svg"
+                                alt="tailwind icon">
+                        </div>
+                        <a href="https://github.com/William2809/LinkCo" target="_blank"
+                            class="open flex justify-center items-center bg-[#577174] w-[28.8px] h-[28.8px] rounded-[8px] lg:w-[48px] lg:h-[48px]">
+                            <img class="m-2 scale-[60%] lg:scale-[100%]" src="/assets/william/open.svg" alt="open">
+                        </a>
+                    </div>
+                    <div class="project-img flex justify-center items-end">
+                        <img class="max-w-[506px] w-full px-8" src="/assets/william/project2.png" alt="project 1">
+                    </div>
+                </div>
+                <div class="project-desc flex flex-col gap-2 md:max-w-[620px]">
+                    <h4 class="text-[#68878b] text-[20px] font-semibold">
+                        Website Application
+                    </h4>
+                    <h3 class="text-white text-[28px] font-semibold">
+                        Social Media for Businesses
+                    </h3>
+                    <p class="text-[#68878b] text-[14px] md:text-[16px] lg:text-[18px] font-normal">
+                        Connect with top suppliers and streamline your business operations with our web application
+                        designed to simplify sourcing, communication, and payment processing.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#465a5c] pb-4">
+        <h2 class="text-white font-bold text-center text-[28px] p-4">Web Design and Programming</h2>
+        <div
+            class="bottom-nav flex flex-col justify-center w-full items-center border-t-[2px] border-solid border-[#aee1e7] gap-2 p-4 md:flex-row md:justify-between md:py-4">
+            <h3 class="text-[#aee1e7] text-[24px] py-1 font-semibold md:w-[168px]">Group 11</h3>
+            <div class="bottom-navitems flex justify-center w-full md:w-min gap-3">
+                <a class="active text-white hover:text-[#aee1e7] text-[16px]" href="index.html">Home</a>
+                <a class="text-white hover:text-[#aee1e7] text-[16px]" href="cecile.html">Cécile</a>
+                <a class="text-white hover:text-[#aee1e7] text-[16px]" href="nicholas.html">Nicholas</a>
+                <a class="text-[#aee1e7] hover:text-[#aee1e7]" href=" william.html">William</a>
+            </div>
+            <div
+                class="bottom-icons flex justify-center items-center w-full gap-3 p-1 scale-[60%] md:w-min md:p-0 md:scale-[100%] ">
+                <a href="https://www.shibaura-it.ac.jp/en/" target="_blank">
+                    <img src="/assets/general/link.svg" alt="link">
+                </a>
+                <a href="https://www.instagram.com/shibaura_instituteoftechnology/" target="_blank">
+                    <img src="/assets/general/instagram-bottom.svg" alt="instagram">
+                </a>
+                <a href="mailto:global-admission@ow.shibaura-it.ac.jp" target="_blank">
+                    <img src="/assets/general/mail-bottom.svg" alt="email">
+                </a>
+
+            </div>
+        </div>
+        <p class="text-center text-[12px] text-[#d7f0f3] flex justify-center items-center pb-5">
+            © 2023 Shibaura Institute of Technology
+        </p>
+    </footer>
+</body>
+
+</html>

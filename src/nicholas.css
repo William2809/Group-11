@@ -1,0 +1,331 @@
+body {
+  background-color: #434b4e;
+}
+
+/* nav */
+.logo {
+  color: #cdcdc0;
+}
+
+.navitems a {
+  color: #cdcdc0;
+}
+
+.navitems a.active {
+  color: #aee1e7;
+}
+
+.navitems a:hover {
+  color: #aee1e7;
+  font-size: calc(100% + 2px);
+  margin: -2px;
+}
+
+/* intro */
+.selfintro h1 {
+  background: linear-gradient(
+    270deg,
+    #577776 7.83%,
+    #a0b084 30.66%,
+    #faefd4 56.07%,
+    #a57c65 77.16%,
+    #688b8a 99.9%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 24px;
+  margin-bottom: 36px;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.sub-intro {
+  /* padding-top: px; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-frame {
+  display: flex;
+  justify-content: center;
+}
+
+.profile {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.bio {
+  display: flex;
+  gap: 20px;
+}
+
+.bio h3 {
+  color: #ddbc95;
+  font-weight: 600;
+  font-size: 28px;
+  padding: 0 0 12px 0;
+}
+
+.bio p {
+  color: #acc0c4;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* Hobbies */
+.HobbiesAndInterests {
+  display: flex;
+  flex-direction: column;
+}
+
+.HobbiesAndInterests h3 {
+  color: #ddbc95;
+  font-size: 28px;
+  padding-bottom: 24px;
+  font-weight: bold;
+}
+
+.hobbies {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  text-align: center;
+}
+
+.hobby {
+  padding: 24px;
+  border-radius: 16px;
+  border: 3px solid #acc0c4;
+}
+
+.hobbies-desc {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hobbies-desc h4 {
+  color: #b38867;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.hobbies-desc p {
+  color: #acc0c4;
+  font-size: 16px;
+}
+
+.hobby-icon {
+  width: 52px;
+  height: 52px;
+}
+
+/* projects */
+.past-projects {
+  margin-top: 36px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.past-projects h2 {
+  color: #ddbc95;
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.project-icon {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+  height: 80px;
+  margin-left: 12px;
+  background-color: #596a6c;
+  border-radius: 20px;
+  padding: 12px 12px 12px 12px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.project-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 600px;
+}
+
+.project h4 {
+  color: #b38867;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.project-desc h3 {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.project-desc p {
+  color: #acc0c4;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* footer */
+footer {
+  background-color: #465a5c;
+}
+
+footer h2 {
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .intro h1 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  .profile {
+    width: 160px;
+    height: 160px;
+  }
+  .biography {
+    max-width: 540px;
+  }
+  .biography h3 {
+    font-size: 24px;
+  }
+  .biography p {
+    font-size: 16px;
+  }
+  .connect h3 {
+    font-size: 24px;
+  }
+  .desc {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .skills {
+    flex-direction: row;
+  }
+
+  .skill {
+    flex: 1;
+  }
+
+  .project-frame {
+    width: 620px;
+  }
+
+  .featured-projects {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sub-intro {
+    flex-direction: row;
+  }
+  .intro h1 {
+    font-size: 48px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+  .sub-intro {
+    gap: 40px;
+    padding: 0 20px;
+  }
+  .biography h3 {
+    font-size: 28px;
+  }
+  .biography p {
+    font-size: 18px;
+  }
+  .connect h3 {
+    font-size: 28px;
+  }
+  .link-icons a {
+    width: 48px;
+    height: 48px;
+  }
+
+  .profile {
+    width: 200px;
+    height: 200px;
+  }
+  .project {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .project-icons {
+    height: 48px;
+  }
+
+  .icon-wrapper {
+    height: 48px;
+  }
+
+  .tools {
+    width: 48px;
+    height: 48px;
+  }
+
+  .open {
+    width: 48px;
+    height: 48px;
+  }
+
+  .open img {
+    transform: scale(100%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .intro h1 {
+    margin-bottom: 80px;
+  }
+
+  .sub-intro {
+    margin-bottom: 100px;
+  }
+
+  .expertise {
+    border-top: 2px solid #aee1e7;
+    border-bottom: 2px solid #aee1e7;
+    flex-direction: row;
+    gap: 40px;
+    padding: 80px 0;
+  }
+
+  .expertise-desc {
+    min-width: 260px;
+    max-width: 300px;
+  }
+
+  .featured-projects {
+    margin-top: 80px;
+  }
+}
