@@ -24,6 +24,9 @@
 </head>
 
 <body>
+
+    <!--NAV BAR-->
+    
     <nav class="text-[18px] lg:text-[20px] sticky top-0 z-20 bg-[#9cedf8]">
         <div class="navbar py-3 md:py-5 px-5 md:px-0 max-w-[1500px] flex items-center justify-center z-20 bg-[#9cedf8]">
             <div class="text-[#425FFA] flex-1 basis-[140px] pr-3">
@@ -50,6 +53,8 @@
         </div>
     </nav>
 
+    <!--PHOTO AND ABOUT ME-->
+
     <h2 class="text-[32px] font-bold md:text-[40px] md:mt-5 lg:text-[48px] lg:pt-10 lg:pb-5 lg:mt-5 xl:mb-20" id="greeting">Hi, I'm Cécile de Lapasse, a computer science student focusing on back-end developing.</h2>
     <div class="ligne">
         <img id="mypicture" src="/assets/cecile/skytree.jpg" alt="My photo">
@@ -59,8 +64,11 @@
         </div>
     </div>
 
+    <!--MAIN CONTENT-->
+
     <div id="boxes" class="ligne">
-        <div class="colonne">
+
+        <div class="ligne"> <!--First row with country and a column with interests and photos-->
             <section id="country">
                 <div class="line">
                     <h3 class="font-medium text-[28px]">Country</h3>
@@ -73,75 +81,73 @@
                 <img id="aqueduct" class="picture img-fluid" alt="Aqueduct" src="/assets/cecile/pontdugard.jpg">
             </section>
 
-            <div class="line">
-                <section id="whyjapan">
-                    <h3 class="font-medium text-[28px]">Why I came to Japan</h3>
-                    <p>Since elementary school, I have watch anime and therefore been interested in Japanese
-                        culture.<br>That is also why I have been a staff at a Japanese culture convention called
-                        Anim’Est that gathered more than 10,000 people last year, and is solely organized by students
-                        from different engineering schools, mine included.</p>
+            <div class="colonne">
+                <section id="interests">
+                    <div class="line">
+                        <h3 class="font-medium text-[28px]">Interests</h3>
+                        <img class="icon_right" alt="Hobbie icon" src="/assets/cecile/harry_potter.png">
+                    </div>
+                    <div class="line">
+                        <div class="colonne">
+                            <img class="icon" alt="Piano icon" src="/assets/cecile/piano_sticker.png">
+                            <p>Piano<br>(mostly self-taught)</p>
+                        </div>
+                        <div class="colonne">
+                            <img class="icon" alt="Video game icon" src="/assets/cecile/minecraft.png">
+                            <p>Video games<br>(Action-adventure)</p>
+                        </div>
+                        <div class="colonne">
+                            <img class="icon" alt="Movie icon" src="/assets/cecile/ring_sticker.png">
+                            <p>Movies<br>(SF, Fantasy)</p>
+                        </div>
+                        <div class="colonne">
+                            <img class="icon" alt="Eating icon" src="/assets/cecile/chocolate.png">
+                            <p>Eating sweets<br>(anything)</p>
+                        </div>
+                    </div>
                 </section>
 
-                <section>
-                    <h3 class="font-medium text-[28px]">My lovely cat</h3>
-                    <img class="picture" alt="My beautiful cat" src="/assets/cecile/yuki1.jpg">
-                    <p id="mycat">Her name is Yuki.</p>
+                <section id="photos">
+                    <h3 class="font-medium text-[28px]">I also like to take photos</h3>
+                    <div id="pictures">
+                        <img class="small_picture img-fluid" alt="Ferris Wheel" src="/assets/cecile/grande roue.jpg">
+                        <img class="small_picture img-fluid" alt="Golden hour in Portugal" src="/assets/cecile/portugal soleil 2.jpg">
+                        <img class="small_picture img-fluid" alt="Pink flowers" src="/assets/cecile/rose2.jpg">
+                        <img class="small_picture img-fluid" alt="Buttercup flower" src="/assets/cecile/bouton-d'or.jpg">
+                        <img class="small_picture img-fluid" alt="Colorful umbrellas shading a street" src="/assets/cecile/umbrellas.jpg">
+                        <img class="small_picture img-fluid" alt="Sunset" src="/assets/cecile/cloudsun.jpg">
+                    </div>
                 </section>
             </div>
         </div>
 
-        <div class="colonne">
-            <section id="interests">
-                <div class="line">
-                    <h3 class="font-medium text-[28px]">Interests</h3>
-                    <img class="icon_right" alt="Hobbie icon" src="/assets/cecile/harry_potter.png">
-                </div>
-                <div class="line">
-                    <div class="colonne">
-                        <img class="icon" alt="Piano icon" src="/assets/cecile/piano_sticker.png">
-                        <p>Piano<br>(mostly self-taught)</p>
-                    </div>
-                    <div class="colonne">
-                        <img class="icon" alt="Video game icon" src="/assets/cecile/minecraft.png">
-                        <p>Video games<br>(Action-adventure)</p>
-                    </div>
-                    <div class="colonne">
-                        <img class="icon" alt="Movie icon" src="/assets/cecile/ring_sticker.png">
-                        <p>Movies<br>(SF, Fantasy)</p>
-                    </div>
-                    <div class="colonne">
-                        <img class="icon" alt="Eating icon" src="/assets/cecile/chocolate.png">
-                        <p>Eating sweets<br>(anything)</p>
-                    </div>
-                </div>
-            </section>
+        <section>
+            <div id="darkpast" class="line">
+                <h3 class="font-medium text-[28px]">My projects</h3>
+                <img class="icon_right" alt="Programming icon" src="/assets/cecile/programming.png">
+            </div>
+            <p>I worked on many group projects in school that were focused/solely on back-end development. For example in second year:<br><br>
+                I did two applications with JavaFX, the first one was a travel notebook where you could type a text and add a picture in each page, the second one was a flashcard app that we had to code in 4 days for our Coding Week.<br><br>
+                We worked on the first part of creating a compiler for Tiger (programming language) which consisted of defining: a grammar with ANTLR, its ASA (abstract syntax tree), its symbol table and its semantic controls. With this, we could analyze a Tiger program and print its syntaxic and semantic errors and more...</li>
+            </p>
+        </section>
 
-            <section id="photos">
-                <h3 class="font-medium text-[28px]">I also like to take photos</h3>
-                <div id="pictures">
-                    <img class="small_picture img-fluid" alt="Ferris Wheel" src="/assets/cecile/grande roue.jpg">
-                    <img class="small_picture img-fluid" alt="Golden hour in Portugal"
-                        src="/assets/cecile/portugal soleil 2.jpg">
-                    <img class="small_picture img-fluid" alt="Pink flowers" src="/assets/cecile/rose2.jpg">
-                    <img class="small_picture img-fluid" alt="Buttercup flower" src="/assets/cecile/bouton-d'or.jpg">
-                    <img class="small_picture img-fluid" alt="Colorful umbrellas shading a street"
-                        src="/assets/cecile/umbrellas.jpg">
-                    <img class="small_picture img-fluid" alt="Sunset" src="/assets/cecile/cloudsun.jpg">
-                </div>
-            </section>
+        <section id="whyjapan">
+            <h3 class="font-medium text-[28px]">Why I came to Japan</h3>
+            <p>Since elementary school, I have watch anime and therefore been interested in Japanese
+                culture.<br>That is also why I have been a staff at a Japanese culture convention called
+                Anim’Est that gathered more than 10,000 people last year, and is solely organized by students
+                from different engineering schools, mine included.</p>
+        </section>
 
-            <section>
-                <div id="darkpast" class="line">
-                    <h3 class="font-medium text-[28px]">My projects</h3>
-                    <img class="icon_right" alt="Programming icon" src="/assets/cecile/programming.png">
-                </div>
-                <p>I worked on many group projects in school that were focused/solely on back-end development. For example in second year:<br><br>
-                    I did two applications with JavaFX, the first one was a travel notebook where you could type a text and add a picture in each page, the second one was a flashcard app that we had to code in 4 days for our Coding Week.<br><br>
-                    We worked on the first part of creating a compiler for Tiger (programming language) which consisted of defining: a grammar with ANTLR, its ASA (abstract syntax tree), its symbol table and its semantic controls. With this, we could analyze a Tiger program and print its syntaxic and semantic errors and more...</li>
-                </p>
-            </section>
-        </div>
+        <section>
+            <h3 class="font-medium text-[28px]">My lovely cat</h3>
+            <img class="picture" alt="My beautiful cat" src="/assets/cecile/yuki1.jpg">
+            <p id="mycat">Her name is Yuki.</p>
+        </section>
     </div>
+
+    <!--FOOTER-->
 
     <footer class="bg-[#465a5c] pb-4">
         <h2 class="text-white font-bold text-center text-[28px] p-4">Web Design and Programming</h2>

@@ -58,7 +58,8 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin: 2em;
+  padding-left: 1.5em;
+  margin: 1em;
 }
 
 .ligne {
@@ -72,15 +73,15 @@ body {
   display: flex;
   flex-flow: column wrap;
   gap: 20px;
-  align-items: stretch;
+  align-items: center;
   text-align: center;
 }
 
 .line {
   display: flex;
   flex-flow: row wrap;
-  gap: 5px;
   justify-content: center;
+  gap: 5px;
 }
 
 #mypicture {
@@ -106,7 +107,7 @@ h3 {
 
 #boxes section {
   margin: 0 20px;
-  max-width: 40%;
+  width: 30%;
   background-color: #05daf6;
   border-radius: 20px;
   padding: 1.5em 1.5em;
@@ -153,7 +154,7 @@ h3 {
 
 .small_picture {
   border-radius: 7px;
-  width: 33.3%;
+  width: 16%;
   height: auto;
 }
 
@@ -265,6 +266,9 @@ footer h2 {
   }
 
   .ligne {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
   }
 
@@ -340,7 +344,7 @@ footer h2 {
 
 @media (min-width: 530px) {
   .small_picture {
-    width: 33.3%;
+    width: 16%;
   }
 }
 
