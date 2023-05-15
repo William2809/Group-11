@@ -12,13 +12,6 @@ body {
   color: #68878b;
 }
 
-.logo {
-  color: #425ffa;
-  width: 100%;
-  /* flex-basis: 120px; */
-  flex: 1 1 140px;
-  padding-right: 10px;
-}
 
 /*------NAVIGATION BAR------*/
 
@@ -94,6 +87,7 @@ body {
   border-radius: 100%;
   width: 200px;
   height: 200px;
+  object-fit: cover;
 }
 
 #aboutme {
@@ -112,16 +106,18 @@ h3 {
 
 #boxes section {
   margin: 0 20px;
-  max-width: 700px;
+  max-width: 40%;
   background-color: #05daf6;
   border-radius: 20px;
   padding: 1.5em 1.5em;
+  font-size: 0.8em;
   text-align: justify;
   color: white;
   align-items: center;
 }
 
 #boxes section h3 {
+  font-size: 1.5em;
   padding-bottom: 40px;
   text-align: start;
 }
@@ -138,7 +134,7 @@ h3 {
   border-radius: 7%;
   max-height: 17em;
   display: block; /*allow to center with margin*/
-  /*margin: auto;*/
+  margin: auto;
 }
 
 #country {
@@ -146,9 +142,7 @@ h3 {
 }
 
 #aqueduct {
-  max-height: fit-content;
-  width: auto;
-  /*margin-top: 6em;*/
+  margin-top: 1em;
 }
 
 #pictures {
@@ -254,13 +248,6 @@ footer h2 {
 /*---Responsive styles---*/
 
 @media (max-width: 335px) {
-  .logo {
-    flex: auto;
-  }
-
-  .logo h1 {
-    font-size: 1.5em;
-  }
 
   #greeting {
     font-size: 1.3em;
@@ -326,7 +313,6 @@ footer h2 {
 }
 
 @media (min-width: 360px) {
-  /*mettre le menu déroulant de William*/
 
   body {
     font-size: 1em;
@@ -379,6 +365,10 @@ footer h2 {
 
   footer {
     padding: 0 80px;
+  }
+
+  #aboutme{
+    align-items: flex-start;
   }
 
   .bottom-navitems {
