@@ -40,6 +40,7 @@ html {
 .fuji-bg {
   height: calc(100vh - 68px);
 }
+
 @keyframes float {
   0% {
     transform: translateY(0px);
