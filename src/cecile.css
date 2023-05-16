@@ -12,13 +12,6 @@ body {
   color: #68878b;
 }
 
-.logo {
-  color: #425ffa;
-  width: 100%;
-  /* flex-basis: 120px; */
-  flex: 1 1 140px;
-  padding-right: 10px;
-}
 
 /*------NAVIGATION BAR------*/
 
@@ -65,7 +58,8 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin: 2em;
+  padding-left: 1.5em;
+  margin: 1em;
 }
 
 .ligne {
@@ -79,15 +73,16 @@ body {
   display: flex;
   flex-flow: column wrap;
   gap: 20px;
-  align-items: stretch;
+  align-items: center;
+  justify-content: stretch;
   text-align: center;
 }
 
 .line {
   display: flex;
   flex-flow: row wrap;
-  gap: 5px;
   justify-content: center;
+  gap: 5px;
 }
 
 #mypicture {
@@ -112,17 +107,20 @@ h3 {
 }
 
 #boxes section {
-  margin: 0 20px;
-  max-width: 700px;
+  /*margin: 0 20px;*/
   background-color: #05daf6;
+  max-width: 500px;
+  height: auto;
   border-radius: 20px;
   padding: 1.5em 1.5em;
+  font-size: 0.8em;
   text-align: justify;
   color: white;
   align-items: center;
 }
 
 #boxes section h3 {
+  font-size: 1.5em;
   padding-bottom: 40px;
   text-align: start;
 }
@@ -139,17 +137,27 @@ h3 {
   border-radius: 7%;
   max-height: 17em;
   display: block; /*allow to center with margin*/
-  /*margin: auto;*/
+  margin: auto;
 }
 
 #country {
+  width: 400px;
+  height: auto;
   align-self: flex-start;
 }
 
 #aqueduct {
-  max-height: fit-content;
-  width: auto;
-  /*margin-top: 6em;*/
+  margin-top: 1em;
+}
+
+#interests {
+  width: fit-content;
+  height: auto;
+}
+
+#photosection {
+  width: 480px; /*is it useful or by default?*/
+  margin-top: auto;
 }
 
 #pictures {
@@ -160,19 +168,30 @@ h3 {
 
 .small_picture {
   border-radius: 7px;
-  width: 33.3%;
+  width: 16.6%;
   height: auto;
 }
 
-#mycat {
-  margin-top: 1em;
-  text-align: center;
+#projects {
+  width: 380px;
+  height: auto;
 }
 
 #whyjapan {
-  width: 300px;
+  width: 275px;
   height: auto;
-  margin-top: auto;
+  /*margin-top: auto;*//*if want to not stretch*/
+}
+
+#cat {
+  /*display: flex;
+  flex-direction: column;
+  justify-content:space-around;*/
+}
+
+#textcat {
+  margin-top: 1em;
+  text-align: center;
 }
 
 /*------FOOTER------*/
@@ -253,15 +272,8 @@ footer h2 {
 }
 
 /*---Responsive styles---*/
-
+/*
 @media (max-width: 335px) {
-  .logo {
-    flex: auto;
-  }
-
-  .logo h1 {
-    font-size: 1.5em;
-  }
 
   #greeting {
     font-size: 1.3em;
@@ -279,6 +291,9 @@ footer h2 {
   }
 
   .ligne {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
   }
 
@@ -293,10 +308,10 @@ footer h2 {
   }
 
   .line {
-    gap: 20px; /*same spacing inside a column than between columns*/
+    gap: 20px; /*same spacing inside a column than between columns
   }
 
-  #darkpast {
+  #headingprojects {
     gap: 0;
   }
 
@@ -327,7 +342,6 @@ footer h2 {
 }
 
 @media (min-width: 360px) {
-  /*mettre le menu déroulant de William*/
 
   body {
     font-size: 1em;
@@ -343,7 +357,7 @@ footer h2 {
   }
 
   .line {
-    gap: 20px; /*same spacing inside a column than between columns*/
+    gap: 20px; /*same spacing inside a column than between columns
   }
 }
 
@@ -355,7 +369,7 @@ footer h2 {
 
 @media (min-width: 530px) {
   .small_picture {
-    width: 33.3%;
+    width: 16%;
   }
 }
 
@@ -382,6 +396,10 @@ footer h2 {
     padding: 0 80px;
   }
 
+  #aboutme{
+    align-items: flex-start;
+  }
+
   .bottom-navitems {
     width: min-content;
     display: flex;
@@ -399,3 +417,4 @@ footer h2 {
     padding: 0 120px;
   }
 }
+*/
