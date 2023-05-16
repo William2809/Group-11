@@ -74,6 +74,7 @@ body {
   flex-flow: column wrap;
   gap: 20px;
   align-items: center;
+  justify-content: stretch;
   text-align: center;
 }
 
@@ -106,9 +107,10 @@ h3 {
 }
 
 #boxes section {
-  margin: 0 20px;
-  width: 30%;
+  /*margin: 0 20px;*/
   background-color: #05daf6;
+  max-width: 500px;
+  height: auto;
   border-radius: 20px;
   padding: 1.5em 1.5em;
   font-size: 0.8em;
@@ -139,11 +141,23 @@ h3 {
 }
 
 #country {
+  width: 400px;
+  height: auto;
   align-self: flex-start;
 }
 
 #aqueduct {
   margin-top: 1em;
+}
+
+#interests {
+  width: fit-content;
+  height: auto;
+}
+
+#photosection {
+  width: 480px; /*is it useful or by default?*/
+  margin-top: auto;
 }
 
 #pictures {
@@ -154,19 +168,30 @@ h3 {
 
 .small_picture {
   border-radius: 7px;
-  width: 16%;
+  width: 16.6%;
   height: auto;
 }
 
-#mycat {
-  margin-top: 1em;
-  text-align: center;
+#projects {
+  width: 380px;
+  height: auto;
 }
 
 #whyjapan {
-  width: 300px;
+  width: 275px;
   height: auto;
-  margin-top: auto;
+  /*margin-top: auto;*//*if want to not stretch*/
+}
+
+#cat {
+  /*display: flex;
+  flex-direction: column;
+  justify-content:space-around;*/
+}
+
+#textcat {
+  margin-top: 1em;
+  text-align: center;
 }
 
 /*------FOOTER------*/
@@ -247,7 +272,7 @@ footer h2 {
 }
 
 /*---Responsive styles---*/
-
+/*
 @media (max-width: 335px) {
 
   #greeting {
@@ -283,10 +308,10 @@ footer h2 {
   }
 
   .line {
-    gap: 20px; /*same spacing inside a column than between columns*/
+    gap: 20px; /*same spacing inside a column than between columns
   }
 
-  #darkpast {
+  #headingprojects {
     gap: 0;
   }
 
@@ -332,7 +357,7 @@ footer h2 {
   }
 
   .line {
-    gap: 20px; /*same spacing inside a column than between columns*/
+    gap: 20px; /*same spacing inside a column than between columns
   }
 }
 
@@ -392,3 +417,4 @@ footer h2 {
     padding: 0 120px;
   }
 }
+*/

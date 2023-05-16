@@ -10,8 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--need to put my onw CSS first so that it override the default CSS of Bootstrap (reboot.css particularly)-->
-    <link rel="stylesheet" href="/src/cecile.css">
-    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="../src/cecile.css">
+    <link rel="stylesheet" href="../src/output.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,67 +68,72 @@
 
     <div id="boxes" class="ligne">
 
-        <div class="ligne"> <!--First row with country and a column with interests and photos-->
-            <section id="country">
+        <section id="country">
+            <div class="line">
+                <h3 class="font-medium text-[28px]">Country</h3>
+                <img id="flag" class="icon_right" alt="French flag icon" src="/assets/cecile/france_flag.png">
+            </div>
+            <p>I come from France, you can read an introduction in the general page! It has 4 seasons and many
+                different landscapes and climates because of it's particular location: there is the Atlantic ocean,
+                the Mediterranean see, mountain chains like the Alpes... And there’s a lot of ancient roman
+                monuments in the South where I’m from, like this aqueduct.</p>
+            <img id="aqueduct" class="picture img-fluid" alt="Aqueduct" src="/assets/cecile/pontdugard.jpg">
+        </section>
+
+        <div class="colonne"> <!--COLUMN-->
+            <section id="interests">
                 <div class="line">
-                    <h3 class="font-medium text-[28px]">Country</h3>
-                    <img id="flag" class="icon_right" alt="French flag icon" src="/assets/cecile/france_flag.png">
+                    <h3 class="font-medium text-[28px]">Interests</h3>
+                    <img class="icon_right" alt="Hobbie icon" src="/assets/cecile/harry_potter.png">
                 </div>
-                <p>I come from France, you can read an introduction in the general page! It has 4 seasons and many
-                    different landscapes and climates because of it's particular location: there is the Atlantic ocean,
-                    the Mediterranean see, mountain chains like the Alpes... And there’s a lot of ancient roman
-                    monuments in the South where I’m from, like this aqueduct.</p>
-                <img id="aqueduct" class="picture img-fluid" alt="Aqueduct" src="/assets/cecile/pontdugard.jpg">
+                <div class="line">
+                    <div class="colonne">
+                        <img class="icon" alt="Piano icon" src="/assets/cecile/piano_sticker.png">
+                        <p>Piano<br>(mostly self-taught)</p>
+                    </div>
+                    <div class="colonne">
+                        <img class="icon" alt="Video game icon" src="/assets/cecile/minecraft.png">
+                        <p>Video games<br>(Action-adventure)</p>
+                    </div>
+                    <div class="colonne">
+                        <img class="icon" alt="Movie icon" src="/assets/cecile/ring_sticker.png">
+                        <p>Movies<br>(SF, Fantasy)</p>
+                    </div>
+                    <div class="colonne">
+                        <img class="icon" alt="Eating icon" src="/assets/cecile/chocolate.png">
+                        <p>Eating sweets<br>(anything)</p>
+                    </div>
+                </div>
             </section>
 
-            <div class="colonne">
-                <section id="interests">
-                    <div class="line">
-                        <h3 class="font-medium text-[28px]">Interests</h3>
-                        <img class="icon_right" alt="Hobbie icon" src="/assets/cecile/harry_potter.png">
-                    </div>
-                    <div class="line">
-                        <div class="colonne">
-                            <img class="icon" alt="Piano icon" src="/assets/cecile/piano_sticker.png">
-                            <p>Piano<br>(mostly self-taught)</p>
-                        </div>
-                        <div class="colonne">
-                            <img class="icon" alt="Video game icon" src="/assets/cecile/minecraft.png">
-                            <p>Video games<br>(Action-adventure)</p>
-                        </div>
-                        <div class="colonne">
-                            <img class="icon" alt="Movie icon" src="/assets/cecile/ring_sticker.png">
-                            <p>Movies<br>(SF, Fantasy)</p>
-                        </div>
-                        <div class="colonne">
-                            <img class="icon" alt="Eating icon" src="/assets/cecile/chocolate.png">
-                            <p>Eating sweets<br>(anything)</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="photos">
-                    <h3 class="font-medium text-[28px]">I also like to take photos</h3>
-                    <div id="pictures">
-                        <img class="small_picture img-fluid" alt="Ferris Wheel" src="/assets/cecile/grande roue.jpg">
-                        <img class="small_picture img-fluid" alt="Golden hour in Portugal" src="/assets/cecile/portugal soleil 2.jpg">
-                        <img class="small_picture img-fluid" alt="Pink flowers" src="/assets/cecile/rose2.jpg">
-                        <img class="small_picture img-fluid" alt="Buttercup flower" src="/assets/cecile/bouton-d'or.jpg">
-                        <img class="small_picture img-fluid" alt="Colorful umbrellas shading a street" src="/assets/cecile/umbrellas.jpg">
-                        <img class="small_picture img-fluid" alt="Sunset" src="/assets/cecile/cloudsun.jpg">
-                    </div>
-                </section>
-            </div>
+            <section id="photosection">
+                <h3 class="font-medium text-[28px]">I also like to take photos</h3>
+                <div id="pictures">
+                    <img class="small_picture img-fluid" alt="Ferris Wheel" src="/assets/cecile/grande roue.jpg">
+                    <img class="small_picture img-fluid" alt="Golden hour in Portugal" src="/assets/cecile/portugal soleil 2.jpg">
+                    <img class="small_picture img-fluid" alt="Pink flowers" src="/assets/cecile/rose2.jpg">
+                    <img class="small_picture img-fluid" alt="Buttercup flower" src="/assets/cecile/bouton-d'or.jpg">
+                    <img class="small_picture img-fluid" alt="Colorful umbrellas shading a street" src="/assets/cecile/umbrellas.jpg">
+                    <img class="small_picture img-fluid" alt="Sunset" src="/assets/cecile/cloudsun.jpg">
+                </div>
+            </section>
         </div>
 
-        <section>
-            <div id="darkpast" class="line">
+        <section id="projects">
+            <div id="headingprojects" class="line">
                 <h3 class="font-medium text-[28px]">My projects</h3>
                 <img class="icon_right" alt="Programming icon" src="/assets/cecile/programming.png">
             </div>
-            <p>I worked on many group projects in school that were focused/solely on back-end development. For example in second year:<br><br>
-                I did two applications with JavaFX, the first one was a travel notebook where you could type a text and add a picture in each page, the second one was a flashcard app that we had to code in 4 days for our Coding Week.<br><br>
-                We worked on the first part of creating a compiler for Tiger (programming language) which consisted of defining: a grammar with ANTLR, its ASA (abstract syntax tree), its symbol table and its semantic controls. With this, we could analyze a Tiger program and print its syntaxic and semantic errors and more...</li>
+            <p>I worked on many group projects in school (mostly about back-end programming). For example in second year:
+                <br><br>
+                We do some front-end: I did two applications with JavaFX, the first one was a travel notebook
+                where you could type a text and add a picture in each page, the second one was a flashcard app 
+                that we had to code in 4 days for our Coding Week.
+                <br><br>
+                We also worked on the first part of creating a compiler for Tiger (programming language) which 
+                consisted of defining: a grammar with ANTLR, its ASA (abstract syntax tree), its symbol table 
+                and its semantic controls. With this, we could analyze a Tiger program and print its syntaxic 
+                and semantic errors and more...
             </p>
         </section>
 
@@ -140,10 +145,10 @@
                 from different engineering schools, mine included.</p>
         </section>
 
-        <section>
+        <section id="cat">
             <h3 class="font-medium text-[28px]">My lovely cat</h3>
             <img class="picture" alt="My beautiful cat" src="/assets/cecile/yuki1.jpg">
-            <p id="mycat">Her name is Yuki.</p>
+            <p id="textcat">Her name is Yuki.</p>
         </section>
     </div>
 
