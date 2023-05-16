@@ -608,6 +608,10 @@ img,
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .hidden {
   display: none;
 }
@@ -618,10 +622,6 @@ img,
 
 .h-\[200vh\] {
   height: 200vh;
-}
-
-.h-\[20px\] {
-  height: 20px;
 }
 
 .h-\[28\.8px\] {
@@ -636,16 +636,25 @@ img,
   height: 48px;
 }
 
+.h-\[96px\] {
+  height: 96px;
+}
+
 .h-\[80px\] {
   height: 80px;
 }
 
-.w-\[140px\] {
-  width: 140px;
+.h-full {
+  height: 100%;
 }
 
-.w-\[20px\] {
-  width: 20px;
+.h-max {
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.w-\[140px\] {
+  width: 140px;
 }
 
 .w-\[24px\] {
@@ -660,10 +669,6 @@ img,
   width: 340px;
 }
 
-.w-\[80px\] {
-  width: 80px;
-}
-
 .w-full {
   width: 100%;
 }
@@ -671,6 +676,10 @@ img,
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-\[132px\] {
+  width: 132px;
 }
 
 .min-w-\[340px\] {
@@ -699,6 +708,10 @@ img,
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 .basis-\[140px\] {
@@ -735,10 +748,6 @@ img,
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-1 {
-  gap: 0.25rem;
 }
 
 .gap-10 {
@@ -1349,6 +1358,10 @@ footer {
     height: 160px;
   }
 
+  .md\:h-\[80px\] {
+    height: 80px;
+  }
+
   .md\:w-\[160px\] {
     width: 160px;
   }
@@ -1370,6 +1383,10 @@ footer {
     width: min-content;
   }
 
+  .md\:w-\[132px\] {
+    width: 132px;
+  }
+
   .md\:max-w-\[540px\] {
     max-width: 540px;
   }
@@ -1380,6 +1397,10 @@ footer {
 
   .md\:flex-1 {
     flex: 1 1 0%;
+  }
+
+  .md\:flex-grow-0 {
+    flex-grow: 0;
   }
 
   .md\:scale-\[100\%\] {
@@ -1394,6 +1415,10 @@ footer {
 
   .md\:flex-row-reverse {
     flex-direction: row-reverse;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
   }
 
   .md\:justify-end {
@@ -1418,6 +1443,10 @@ footer {
 
   .md\:p-0 {
     padding: 0px;
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
   }
 
   .md\:px-0 {
@@ -1453,6 +1482,10 @@ footer {
     padding-left: 1.25rem;
   }
 
+  .md\:text-center {
+    text-align: center;
+  }
+
   .md\:text-\[16px\] {
     font-size: 16px;
   }
@@ -1468,15 +1501,15 @@ footer {
   .md\:text-\[40px\] {
     font-size: 40px;
   }
+
+  .md\:text-\[14px\] {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 1024px) {
   .lg\:mt-5 {
     margin-top: 1.25rem;
-  }
-
-  .lg\:h-\[160px\] {
-    height: 160px;
   }
 
   .lg\:h-\[200px\] {
@@ -1495,8 +1528,8 @@ footer {
     height: 48px;
   }
 
-  .lg\:w-\[160px\] {
-    width: 160px;
+  .lg\:h-\[96px\] {
+    height: 96px;
   }
 
   .lg\:w-\[200px\] {
@@ -1509,6 +1542,10 @@ footer {
 
   .lg\:w-\[600px\] {
     width: 600px;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:min-w-\[420px\] {
