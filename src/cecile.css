@@ -38,22 +38,6 @@ body {
 	gap: 20px;
 }
 
-.colonne {
-	display: flex;
-	flex-flow: column wrap;
-	text-align: center;
-	gap: 20px; /*between the elements in the container, the icons and the text*/
-	justify-content: center;
-	align-items: center;
-}
-
-.line {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	gap: 5px;
-}
-
 #mypicture {
 	border-radius: 100%;
 	width: 200px;
@@ -78,20 +62,27 @@ h3 {
 }
 
 #boxes section {
-	margin: 0 20px;
-	background-color: #05daf6;
-	border-radius: 20px;
-	padding: 1.5em 1.5em;
-	font-size: 0.8em;
-	text-align: justify;
-	color: white;
-	align-items: center;
+  margin: 0 20px;
+  background-color: #05daf6;
+  border-radius: 20px;
+  padding: 1.5em 1.5em;
+  font-size: 0.8em;
+  text-align: justify;
+  align-items: center;
+  color: white;
 }
 
 #boxes section h3 {
 	font-size: 1.5em;
 	padding-bottom: 40px;
 	text-align: start;
+}
+
+.line {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 5px;
 }
 
 .icon_right {
@@ -103,24 +94,36 @@ h3 {
 }
 
 .picture {
-	border-radius: 7%;
-	max-height: 17em;
-	display: block; /*allow to center with margin*/
-	margin: auto;
+  border-radius: 7%;
+  max-height: 17em;
+  display: block; /*allow to center horizontally with margin*/
+  margin: auto;
 }
 
 #country {
-	width: 400px;
-	height: auto;
-	align-self: flex-start;
+  width: 420px;
+  height: auto;
 }
 
 #aqueduct {
-	margin-top: 1em;
+  margin-top: 3em;
+}
+
+.colonne {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  gap: 10px; /*between the elements in the container, the icons and the text*/
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_lines{
+  margin-top: 4em;
 }
 
 #interests {
-	width: 480px;
+  width: 320px;
 }
 
 #photosection {
@@ -141,14 +144,14 @@ h3 {
 }
 
 #projects {
-	width: 380px;
-	height: auto;
+  width: 400px;
+  height: auto;
 }
 
 #whyjapan {
-	width: 275px;
-	height: auto;
-	/*margin-top: auto;*/ /*if want to not stretch*/
+  width: 220px;       /*275px;*/
+  height: auto;
+  /*margin-top: auto;*//*if want to not stretch*/
 }
 
 #cat {
@@ -199,14 +202,22 @@ footer p {
 	.small_picture {
 		width: 30%;
 	}
+  .icon_lines{
+    margin-top: 2em;
+  }
 }
 
-@media (max-width: 470px) {
-	/*breakpoint for the column section*/
+@media (max-width: 470px){
+  /*breakpoint for the column section*/
+  
+  #boxes section{
+    width: 95%;
+  }
 
-	#boxes section {
-		max-width: 95%;
-	}
+  #yuki{
+    height: fit-content;
+    width: auto;
+  }
 }
 
 @media (max-width: 455px) {
@@ -220,151 +231,3 @@ footer p {
 		font-size: 1.5em;
 	}
 }
-
-/*BEFORE CHANGE LAYOUT*/
-/*
-@media (max-width: 335px) {
-
-  #greeting {
-    font-size: 1.3em;
-    margin: 2em;
-  }
-
-  #mypicture {
-    display: block;
-    margin: auto;
-  }
-
-  #aboutme {
-    align-items: center;
-    text-align: center;
-  }
-
-  .ligne {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  #boxes section {
-    margin: auto;
-    background-color: #05daf6;
-    border-radius: 20px;
-    padding: 1.5em 1.5em;
-    text-align: justify;
-    color: white;
-    max-width: 90%;
-  }
-
-  .line {
-    gap: 20px; /*same spacing inside a column than between columns
-  }
-
-  #headingprojects {
-    gap: 0;
-  }
-
-  .small_picture {
-    width: 50%;
-  }
-
-  footer h2 {
-    font-size: 1.3em;
-  }
-
-  .bottom-nav h3 {
-    font-size: 1.3em;
-  }
-
-  .bottom-nav {
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-
-  #icon-src p {
-    margin-top: 0.5em;
-  }
-
-  .copyright {
-    font-size: 0.75em;
-  }
-}
-
-@media (min-width: 360px) {
-
-  body {
-    font-size: 1em;
-  }
-
-  #aboutme {
-    align-items: center;
-    text-align: center;
-  }
-
-  .small_picture {
-    width: 50%;
-  }
-
-  .line {
-    gap: 20px; /*same spacing inside a column than between columns
-  }
-}
-
-@media (min-width: 389px) {
-  body {
-    font-size: 1.1em;
-  }
-}
-
-@media (min-width: 530px) {
-  .small_picture {
-    width: 16%;
-  }
-}
-
-@media screen and (min-width: 640px) {
-  section {
-    margin: 0 40px;
-  }
-
-  #country {
-    align-self: center;
-  }
-
-  footer {
-    padding: 0 40px;
-  }
-}
-
-@media (min-width: 768px) {
-  section {
-    margin: 0 80px;
-  }
-
-  footer {
-    padding: 0 80px;
-  }
-
-  #aboutme{
-    align-items: flex-start;
-  }
-
-  .bottom-navitems {
-    width: min-content;
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-  }
-}
-
-@media (min-width: 1024px) {
-  section {
-    margin: 0 120px;
-  }
-
-  footer {
-    padding: 0 120px;
-  }
-}
-*/
