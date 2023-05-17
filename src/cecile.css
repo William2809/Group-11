@@ -216,7 +216,7 @@ footer p {
 
   #yuki{
     height: fit-content;
-    width: fit-content;
+    width: auto;
   }
 }
 
