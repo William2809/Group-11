@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--without it, mobile devices will render the website as a desktop page, which will look distorted and difficult to read on smaller screens-->
     <title>Cécile</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <!--need to put my onw CSS first so that it override the default CSS of Bootstrap (reboot.css particularly)-->
-    <link rel="stylesheet" href="../src/output.css">
     <link rel="stylesheet" href="../src/cecile.css">
+    <link rel="stylesheet" href="../src/output.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +32,7 @@
             <div class="text-[#425FFA] flex-1 basis-[140px] pr-3">
                 <h1 class="text-[24px] font-semibold py-1">Group 11</h1>
             </div>
-            <div class="hidden md:flex items-center gap-3 md:gap-5 ">
+            <div class="hidden md:flex items-center gap-3 md:gap-5 font-medium">
                 <a class="text-[#577174] hover:text-[#425FFA] transition-all" href="index.html">Home</a>
                 <a class="text-[#425FFA] hover:text-[#425FFA] transition-all" href="cecile.html">Cécile</a>
                 <a class="text-[#577174] hover:text-[#425FFA] transition-all" href="nicholas.html">Nicholas</a>
@@ -55,18 +55,13 @@
 
     <!--PHOTO AND ABOUT ME-->
 
-    <h1 class="text-[32px] font-bold md:text-[40px] md:mt-5 lg:text-[48px] lg:pt-10 lg:pb-5 lg:mt-5 xl:mb-20" id="greeting">
-        Hi, I'm Cécile de Lapasse, a computer science student focusing on back-end developing.
-    </h1>
-    
+    <h2 class="text-[32px] font-bold md:text-[40px] md:mt-5 lg:text-[48px] lg:pt-10 lg:pb-5 lg:mt-5 xl:mb-20"
+        id="greeting">Hi, I'm Cécile de Lapasse, a computer science student focusing on back-end developing.</h2>
     <div class="ligne">
         <img id="mypicture" src="/assets/cecile/skytree.jpg" alt="My photo">
-        <div id="aboutme" class="gap-3 md:max-w-[540px]">
-            <h2 class="font-medium text-[28px]">About me</h2>
-            <p class="text-[#68878b] font-medium text-[14px] md:text-[16px] lg:text-[18px]">
-            I'm a 22 year-old engineering student at TELECOM Nancy in the north of France. 
-            Currently on exchange program learning about different domains like science of cooking!
-            </p>
+        <div id="aboutme">
+            <h3 class="font-medium text-[28px]">About me</h3>
+            <p>I'm a 22 year-old engineering student at TELECOM Nancy in the north of France.</p>
         </div>
     </div>
 
@@ -77,7 +72,7 @@
         <section id="country">
             <div class="line">
                 <h3 class="font-medium text-[28px]">Country</h3>
-                <img id="flag" class="icon_right img-fluid" alt="French flag icon" src="/assets/cecile/france_flag.png">
+                <img id="flag" class="icon_right" alt="French flag icon" src="/assets/cecile/france_flag.png">
             </div>
             <p>I come from France, you can read an introduction in the general page! It has 4 seasons and many
                 different landscapes and climates because of it's particular location: there is the Atlantic ocean,
@@ -90,23 +85,23 @@
             <section id="interests">
                 <div class="line">
                     <h3 class="font-medium text-[28px]">Interests</h3>
-                    <img class="icon_right img-fluid" alt="Hobbie icon" src="/assets/cecile/harry_potter.png">
+                    <img class="icon_right" alt="Hobbie icon" src="/assets/cecile/harry_potter.png">
                 </div>
                 <div class="line">
                     <div class="colonne">
-                        <img class="icon img-fluid" alt="Piano icon" src="/assets/cecile/piano_sticker.png">
+                        <img class="icon" alt="Piano icon" src="/assets/cecile/piano_sticker.png">
                         <p>Piano<br>(mostly self-taught)</p>
                     </div>
                     <div class="colonne">
-                        <img class="icon img-fluid" alt="Video game icon" src="/assets/cecile/minecraft.png">
+                        <img class="icon" alt="Video game icon" src="/assets/cecile/minecraft.png">
                         <p>Video games<br>(Action-adventure)</p>
                     </div>
                     <div class="colonne">
-                        <img class="icon img-fluid" alt="Movie icon" src="/assets/cecile/ring_sticker.png">
+                        <img class="icon" alt="Movie icon" src="/assets/cecile/ring_sticker.png">
                         <p>Movies<br>(SF, Fantasy)</p>
                     </div>
                     <div class="colonne">
-                        <img class="icon img-fluid" alt="Eating icon" src="/assets/cecile/chocolate.png">
+                        <img class="icon" alt="Eating icon" src="/assets/cecile/chocolate.png">
                         <p>Eating sweets<br>(anything)</p>
                     </div>
                 </div>
@@ -130,9 +125,10 @@
         <section id="projects">
             <div id="headingprojects" class="line">
                 <h3 class="font-medium text-[28px]">My projects</h3>
-                <img class="icon_right img-fluid" alt="Programming icon" src="/assets/cecile/programming.png">
+                <img class="icon_right" alt="Programming icon" src="/assets/cecile/programming.png">
             </div>
-            <p>I worked on many group projects in school (mostly focusing on back-end programming). For example in second year:
+            <p>I worked on many group projects in school (mostly about back-end programming). For example in second
+                year:
                 <br><br>
                 We do some front-end: I did two applications with JavaFX, the first one was a travel notebook
                 where you could type a text and add a picture in each page, the second one was a flashcard app
@@ -155,23 +151,23 @@
 
         <section id="cat">
             <h3 class="font-medium text-[28px]">My lovely cat</h3>
-            <img class="picture img-fluid" alt="My beautiful cat" src="/assets/cecile/yuki1.jpg">
+            <img class="picture" alt="My beautiful cat" src="/assets/cecile/yuki1.jpg">
             <p id="textcat">Her name is Yuki.</p>
         </section>
     </div>
 
     <!--FOOTER-->
 
-    <footer class="bg-[#465a5c] pb-4">
+    <footer class="bg-[#465a5c] pb-4 mt-10">
         <h2 class="text-white font-bold text-center text-[28px] p-4">Web Design and Programming</h2>
         <div
             class="bottom-nav flex flex-col justify-center w-full items-center border-t-[2px] border-solid border-[#aee1e7] gap-2 p-4 md:flex-row md:justify-between md:py-4">
             <h3 class="text-[#aee1e7] text-[24px] py-1 font-semibold md:w-[168px]">Group 11</h3>
             <div class="bottom-navitems flex justify-center w-full md:w-min gap-3">
-                <a class="hover:text-[#aee1e7] text-[16px]" href="index.html">Home</a>
-                <a class="active hover:text-[#aee1e7] text-[16px]" href="cecile.html">Cécile</a>
-                <a class="hover:text-[#aee1e7] text-[16px]" href="nicholas.html">Nicholas</a>
-                <a class="hover:text-[#aee1e7]" href=" william.html">William</a>
+                <a class="active text-white hover:text-[#aee1e7] text-[16px]" href="index.html">Home</a>
+                <a class="text-white hover:text-[#aee1e7] text-[16px]" href="cecile.html">Cécile</a>
+                <a class="text-white hover:text-[#aee1e7] text-[16px]" href="nicholas.html">Nicholas</a>
+                <a class="text-[#aee1e7] hover:text-[#aee1e7]" href=" william.html">William</a>
             </div>
             <div
                 class="bottom-icons flex justify-center items-center w-full gap-3 p-1 scale-[60%] md:w-min md:p-0 md:scale-[100%] ">

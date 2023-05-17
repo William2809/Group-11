@@ -1,303 +1,226 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
 }
 
 body {
-  background-color: #9cedf8;
-  margin: auto;
-  max-width: 1600px;
-  color: #68878b;
+	background-color: #9cedf8;
+	margin: auto;
+	max-width: 1600px;
+	color: #68878b;
 }
-
 
 /*------NAVIGATION BAR------*/
-
-/* nav {
-  max-width: 1500px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 20px 0;
-  font-size: 16px;
-  margin: 0 20px;
-}
-  
-.navitems {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
-  flex-grow: 1;
-}
-.navitems a {
-  padding: 8px;
-  text-decoration: none;
-  color: #577174;
-}
-  
-.navitems a.active {
-  color: #425FFA;
-} */
 
 /*------CONTENT------*/
 
 #greeting {
-  /*à savoir expliquer*/
-  background: linear-gradient(
-    269.14deg,
-    #c605f7 8.23%,
-    #9c6dcb 31.51%,
-    #6e9ee6 57.43%,
-    #3bc8fc 78.93%,
-    #00ebeb 102.13%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  padding-left: 1.5em;
-  margin: 1em;
+	/*à savoir expliquer*/
+	background: linear-gradient(
+		269.14deg,
+		#c605f7 8.23%,
+		#9c6dcb 31.51%,
+		#6e9ee6 57.43%,
+		#3bc8fc 78.93%,
+		#00ebeb 102.13%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	padding-left: 1.5em;
+	margin: 1em;
 }
 
 .ligne {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  gap: 20px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 20px;
 }
 
 .colonne {
-  display: flex;
-  flex-flow: column wrap;
-  text-align: center;
-  gap: 20px; /*between the elements in the container, the icons and the text*/
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-flow: column wrap;
+	text-align: center;
+	gap: 20px; /*between the elements in the container, the icons and the text*/
+	justify-content: center;
+	align-items: center;
 }
 
 .line {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  gap: 5px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 5px;
 }
 
 #mypicture {
-  border-radius: 100%;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+	border-radius: 100%;
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
 }
 
 #aboutme {
-  margin-left: 1em;
-  justify-content: center;
-  display: flex;
-  flex-flow: column wrap;
+	margin-left: 1em;
+	justify-content: center;
+	display: flex;
+	flex-flow: column wrap;
 }
 
-h2, h3 {
-  color: white;
+h2,
+h3 {
+	color: white;
 }
 
 #boxes {
-  margin-top: 3em;
+	margin-top: 3em;
 }
 
 #boxes section {
-  margin: 0 20px;
-  background-color: #05daf6;
-  border-radius: 20px;
-  padding: 1.5em 1.5em;
-  font-size: 0.8em;
-  text-align: justify;
-  color: white;
-  align-items: center;
+	margin: 0 20px;
+	background-color: #05daf6;
+	border-radius: 20px;
+	padding: 1.5em 1.5em;
+	font-size: 0.8em;
+	text-align: justify;
+	color: white;
+	align-items: center;
 }
 
 #boxes section h3 {
-  font-size: 1.5em;
-  padding-bottom: 40px;
-  text-align: start;
+	font-size: 1.5em;
+	padding-bottom: 40px;
+	text-align: start;
 }
 
 .icon_right {
-  margin-left: auto;
-  align-self: flex-start; /*prevents the image from stretching because of the padding on h3*/
+	margin-left: auto;
+	align-self: flex-start; /*prevents the image from stretching because of the padding on h3*/
 }
 .icon {
-  align-self: center;
+	align-self: center;
 }
 
 .picture {
-  border-radius: 7%;
-  max-height: 17em;
-  display: block; /*allow to center with margin*/
-  margin: auto;
+	border-radius: 7%;
+	max-height: 17em;
+	display: block; /*allow to center with margin*/
+	margin: auto;
 }
 
 #country {
-  width: 400px;
-  height: auto;
-  align-self: flex-start;
+	width: 400px;
+	height: auto;
+	align-self: flex-start;
 }
 
 #aqueduct {
-  margin-top: 1em;
+	margin-top: 1em;
 }
 
 #interests {
-  width: 480px;
+	width: 480px;
 }
 
 #photosection {
-  width: 480px; /*37.5em equivalent*/
-  margin-top: auto; /*takes position at the end of the available vertical space*/
+	width: 480px; /*37.5em equivalent*/
+	margin-top: auto; /*takes position at the end of the available vertical space*/
 }
 
 #pictures {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .small_picture {
-  border-radius: 7px;
-  width: 16.6%;
-  height: auto;
+	border-radius: 7px;
+	width: 16.6%;
+	height: auto;
 }
 
 #projects {
-  width: 380px;
-  height: auto;
+	width: 380px;
+	height: auto;
 }
 
 #whyjapan {
-  width: 275px;
-  height: auto;
-  /*margin-top: auto;*//*if want to not stretch*/
+	width: 275px;
+	height: auto;
+	/*margin-top: auto;*/ /*if want to not stretch*/
 }
 
 #cat {
-  /*display: flex;
+	/*display: flex;
   flex-direction: column;
   justify-content:space-around;*/
 }
 
 #textcat {
-  margin-top: 1em;
-  text-align: center;
+	margin-top: 1em;
+	text-align: center;
 }
 
 /*------FOOTER------*/
 
-footer {
-  background-color: #465a5c;
-  margin-top: 40px;
-  width: 100%;
-  padding: 0 20px;
-}
-
-footer h2 {
-  text-align: center;
-  font-size: 28px;
-  padding: 8px;
-  color: #aee1e7;
-}
-
-.bottom-nav {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  border-top: 2px solid #aee1e7;
-}
-
-.bottom-nav h3 {
-  color: #aee1e7;
-  font-weight: 600;
-  font-size: 24px;
-  padding: 4px 0;
-}
-
-.bottom-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.bottom-nav a.active {
-  color: #aee1e7;
-}
-
-.bottom-nav a:hover {
-  color: #aee1e7;
-}
-
-.bottom-navitems {
-  width: 100%;
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-}
-
 #icon_src {
-  color: #aee1e7;
-  text-align: center;
+	color: #aee1e7;
+	text-align: center;
 }
 
 #icon_src a {
-  text-decoration: none;
-  color: white;
+	text-decoration: none;
+	color: white;
 }
 
 #icon_src a:hover {
-  text-decoration: none;
-  color: #aee1e7;
+	text-decoration: none;
+	color: #aee1e7;
 }
 
-footer p{
-  margin-bottom: 0.5em;
+footer p {
+	margin-bottom: 0.5em;
 }
 
 .copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #d7f0f3;
-  font-size: 14px;
-  padding-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #d7f0f3;
+	font-size: 14px;
+	padding-bottom: 20px;
 }
 
 /*---Responsive styles---*/
 
-@media (max-width: 962px){ /*breakpoint because images are not on same row as country section*/
-  .small_picture{
-    width: 30%;
-  }
+@media (max-width: 962px) {
+	/*breakpoint because images are not on same row as country section*/
+	.small_picture {
+		width: 30%;
+	}
 }
 
-@media (max-width: 470px){ /*breakpoint for the column section*/
+@media (max-width: 470px) {
+	/*breakpoint for the column section*/
 
-  #boxes section{
-    max-width: 95%;
-  }
+	#boxes section {
+		max-width: 95%;
+	}
 }
 
-@media (max-width: 455px){
-  #greeting{
-    font-size: 1.7em;
-    text-align: center;
-    padding: 1em 0.5em;
-    margin: 0;
-  }
-  #aboutme h2{
-    font-size: 1.5em;
-  }
+@media (max-width: 455px) {
+	#greeting {
+		font-size: 1.7em;
+		text-align: center;
+		padding: 1em 0.5em;
+		margin: 0;
+	}
+	#aboutme h2 {
+		font-size: 1.5em;
+	}
 }
 
 /*BEFORE CHANGE LAYOUT*/

@@ -608,6 +608,10 @@ img,
   margin-top: -100vh;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -640,8 +644,8 @@ img,
   height: 48px;
 }
 
-.w-\[132px\] {
-  width: 132px;
+.w-\[110px\] {
+  width: 110px;
 }
 
 .w-\[140px\] {
@@ -1349,6 +1353,10 @@ footer {
     height: 80px;
   }
 
+  .md\:w-\[132px\] {
+    width: 132px;
+  }
+
   .md\:w-\[160px\] {
     width: 160px;
   }
@@ -1473,6 +1481,10 @@ footer {
     font-size: 16px;
   }
 
+  .md\:text-\[20px\] {
+    font-size: 20px;
+  }
+
   .md\:text-\[24px\] {
     font-size: 24px;
   }
@@ -1594,12 +1606,12 @@ footer {
     font-size: 32px;
   }
 
-  .lg\:text-\[48px\] {
-    font-size: 48px;
-  }
-
   .lg\:text-\[40px\] {
     font-size: 40px;
+  }
+
+  .lg\:text-\[48px\] {
+    font-size: 48px;
   }
 }
 
