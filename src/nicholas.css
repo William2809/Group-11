@@ -22,7 +22,7 @@ body {
 }
 
 /* intro */
-.selfintro h1 {
+#intro {
   background: linear-gradient(
     270deg,
     #577776 7.83%,
@@ -36,8 +36,7 @@ body {
   background-clip: text;
   margin-top: 24px;
   margin-bottom: 36px;
-  font-size: 48px;
-  font-weight: bold;
+  
 }
 
 .sub-intro {
@@ -74,6 +73,7 @@ body {
   color: #acc0c4;
   font-weight: 500;
   font-size: 20px;
+  max-width: 700px;
 }
 
 /* Hobbies */
@@ -90,9 +90,9 @@ body {
 }
 
 .hobbies {
-  display: flex;
+  display:inline-flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 8px;
   text-align: center;
 }
 
@@ -121,6 +121,7 @@ body {
 .hobby-icon {
   width: 52px;
   height: 52px;
+  display: inline;
 }
 
 /* projects */
@@ -169,7 +170,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  max-width: 600px;
+  max-width: 490px;
 }
 
 .project h4 {
