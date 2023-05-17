@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--without it, mobile devices will render the website as a desktop page, which will look distorted and difficult to read on smaller screens-->
+    
     <title>Cécile</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!--need to put my onw CSS first so that it override the default CSS of Bootstrap (reboot.css particularly)-->
+    
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!--need to put my own CSS in last so that it overrides the default CSS of Bootstrap-->
     <link rel="stylesheet" href="../src/output.css">
     <link rel="stylesheet" href="../src/cecile.css">
 
@@ -19,6 +22,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    
+    <!--Javascript script for the menu-->
     <script defer src="/script.js"></script>
 
 </head>
@@ -76,7 +81,7 @@
 
         <section id="country">
             <div class="line">
-                <h3 class="font-medium text-[28px]">Country</h3>
+                <h3 class="font-medium text-[28px]">Country</h3>    <!--classes from Tailwind CSS for the font boldness and size-->
                 <img id="flag" class="icon_right img-fluid" alt="French flag icon" src="/assets/cecile/france_flag.png">
             </div>
             <p>I come from France, you can read an introduction in the general page! It has 4 seasons and many
@@ -86,27 +91,27 @@
             <img id="aqueduct" class="picture img-fluid" alt="Aqueduct" src="/assets/cecile/pontdugard.jpg">
         </section>
 
-        <div class="colonne"> <!--COLUMN-->
+        <div class="colonne">
             <section id="interests">
                 <div class="line">
                     <h3 class="font-medium text-[28px]">Interests</h3>
-                    <img class="icon_right img-fluid" alt="Hobbie icon" src="/assets/cecile/harry_potter.png">
+                    <img class="icon_right" alt="Hobbie icon" src="/assets/cecile/harry_potter.png">
                 </div>
                 <div class="line">
                     <div class="colonne">
-                        <img class="icon img-fluid" alt="Piano icon" src="/assets/cecile/piano_sticker.png">
+                        <img class="icon" alt="Piano icon" src="/assets/cecile/piano_sticker.png">
                         <p>Piano<br>(mostly self-taught)</p>
                     </div>
                     <div class="colonne">
-                        <img class="icon img-fluid" alt="Video game icon" src="/assets/cecile/minecraft.png">
+                        <img class="icon" alt="Video game icon" src="/assets/cecile/minecraft.png">
                         <p>Video games<br>(Action-adventure)</p>
                     </div>
                     <div class="colonne">
-                        <img class="icon img-fluid" alt="Movie icon" src="/assets/cecile/ring_sticker.png">
+                        <img class="icon" alt="Movie icon" src="/assets/cecile/ring_sticker.png">
                         <p>Movies<br>(SF, Fantasy)</p>
                     </div>
                     <div class="colonne">
-                        <img class="icon img-fluid" alt="Eating icon" src="/assets/cecile/chocolate.png">
+                        <img class="icon" alt="Eating icon" src="/assets/cecile/chocolate.png">
                         <p>Eating sweets<br>(anything)</p>
                     </div>
                 </div>
@@ -116,17 +121,15 @@
                 <h3 class="font-medium text-[28px]">I also like to take photos</h3>
                 <div id="pictures">
                     <img class="small_picture img-fluid" alt="Ferris Wheel" src="/assets/cecile/grande roue.jpg">
-                    <img class="small_picture img-fluid" alt="Golden hour in Portugal"
-                        src="/assets/cecile/portugal soleil 2.jpg">
+                    <img class="small_picture img-fluid" alt="Golden hour in Portugal" src="/assets/cecile/portugal soleil 2.jpg">
                     <img class="small_picture img-fluid" alt="Pink flowers" src="/assets/cecile/rose2.jpg">
                     <img class="small_picture img-fluid" alt="Buttercup flower" src="/assets/cecile/bouton-d'or.jpg">
-                    <img class="small_picture img-fluid" alt="Colorful umbrellas shading a street"
-                        src="/assets/cecile/umbrellas.jpg">
+                    <img class="small_picture img-fluid" alt="Colorful umbrellas shading a street" src="/assets/cecile/umbrellas.jpg">
                     <img class="small_picture img-fluid" alt="Sunset" src="/assets/cecile/cloudsun.jpg">
                 </div>
             </section>
         </div>
-
+        
         <section id="projects">
             <div id="headingprojects" class="line">
                 <h3 class="font-medium text-[28px]">My projects</h3>
@@ -187,9 +190,12 @@
 
             </div>
         </div>
+        
+        <!--Reference for the icons-->
         <p class="text-center" id="icon_src">Icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+
         <p class="text-center text-[12px] text-[#d7f0f3] flex justify-center items-center pb-5">
-            © 2023 Shibaura Institute of Technology
+            &copy; 2023 Shibaura Institute of Technology
         </p>
     </footer>
 </body>

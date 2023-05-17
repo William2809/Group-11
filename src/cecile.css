@@ -12,37 +12,6 @@ body {
   color: #68878b;
 }
 
-
-/*------NAVIGATION BAR------*/
-
-/* nav {
-  max-width: 1500px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 20px 0;
-  font-size: 16px;
-  margin: 0 20px;
-}
-  
-.navitems {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
-  flex-grow: 1;
-}
-.navitems a {
-  padding: 8px;
-  text-decoration: none;
-  color: #577174;
-}
-  
-.navitems a.active {
-  color: #425FFA;
-} */
-
 /*------CONTENT------*/
 
 #greeting {
@@ -68,6 +37,7 @@ body {
   justify-content: center;
   gap: 20px;
 }
+
 
 .colonne {
   display: flex;
@@ -194,34 +164,8 @@ h2, h3 {
 
 /*------FOOTER------*/
 
-footer {
-  background-color: #465a5c;
-  margin-top: 40px;
-  width: 100%;
-  padding: 0 20px;
-}
-
-footer h2 {
-  text-align: center;
-  font-size: 28px;
-  padding: 8px;
-  color: #aee1e7;
-}
-
-.bottom-nav {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  border-top: 2px solid #aee1e7;
-}
-
-.bottom-nav h3 {
-  color: #aee1e7;
-  font-weight: 600;
-  font-size: 24px;
-  padding: 4px 0;
+footer{
+  margin-top: 2em;
 }
 
 .bottom-nav a {
@@ -236,13 +180,6 @@ footer h2 {
 
 .bottom-nav a:hover {
   color: #aee1e7;
-}
-
-.bottom-navitems {
-  width: 100%;
-  display: flex;
-  gap: 12px;
-  justify-content: center;
 }
 
 #icon_src {
