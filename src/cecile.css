@@ -213,6 +213,11 @@ footer p {
   #boxes section{
     width: 95%;
   }
+
+  #yuki{
+    height: fit-content;
+    width: fit-content;
+  }
 }
 
 @media (max-width: 455px) {
