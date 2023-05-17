@@ -126,21 +126,10 @@ h3 {
   width: 320px;
 }
 
-#photosection {
-	width: 480px; /*37.5em equivalent*/
-	margin-top: auto; /*takes position at the end of the available vertical space*/
-}
-
 #pictures {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-}
-
-.small_picture {
-	border-radius: 7px;
-	width: 16.6%;
-	height: auto;
 }
 
 #projects {
@@ -197,11 +186,8 @@ footer p {
 
 /*---Responsive styles---*/
 
-@media (max-width: 962px) {
-	/*breakpoint because images are not on same row as country section*/
-	.small_picture {
-		width: 30%;
-	}
+@media (max-width: 839px) {
+	/*breakpoint because interests is not on same row as country section*/
   .icon_lines{
     margin-top: 2em;
   }
