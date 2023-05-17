@@ -93,6 +93,7 @@ body {
 }
 
 #aboutme {
+  margin-left: 1em;
   justify-content: center;
   display: flex;
   flex-flow: column wrap;
@@ -275,17 +276,21 @@ footer p{
 /*---Responsive styles---*/
 
 @media (max-width: 470px){ /*breakpoint for the column section*/
-  /*#boxes section{
+
+  #boxes section{
     max-width: 95%;
-    height: auto;
-  }*/
-  #interests{
-    max-width: 95%;
-    height: auto;
   }
-  #photosection{
-    max-width: 95%;
-    height: auto;
+}
+
+@media (max-width: 455px){
+  #greeting{
+    font-size: 1.7em;
+    text-align: center;
+    padding: 1em 0.5em;
+    margin: 0;
+  }
+  #aboutme h2{
+    font-size: 1.5em;
   }
 }
 
