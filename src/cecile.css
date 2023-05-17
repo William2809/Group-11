@@ -38,23 +38,6 @@ body {
   gap: 20px;
 }
 
-
-.colonne {
-  display: flex;
-  flex-flow: column wrap;
-  text-align: center;
-  gap: 20px; /*between the elements in the container, the icons and the text*/
-  justify-content: center;
-  align-items: center;
-}
-
-.line {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  gap: 5px;
-}
-
 #mypicture {
   border-radius: 100%;
   width: 200px;
@@ -85,13 +68,19 @@ h2, h3 {
   font-size: 0.8em;
   text-align: justify;
   color: white;
-  align-items: center;
 }
 
 #boxes section h3 {
   font-size: 1.5em;
   padding-bottom: 40px;
   text-align: start;
+}
+
+.line {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 5px;
 }
 
 .icon_right {
@@ -105,22 +94,34 @@ h2, h3 {
 .picture {
   border-radius: 7%;
   max-height: 17em;
-  display: block; /*allow to center with margin*/
+  display: block; /*allow to center horizontally with margin*/
   margin: auto;
 }
 
 #country {
   width: 400px;
   height: auto;
-  align-self: flex-start;
 }
 
 #aqueduct {
-  margin-top: 1em;
+  margin-top: 3em;
+}
+
+.colonne {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  gap: 10px; /*between the elements in the container, the icons and the text*/
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_lines{
+  margin-top: 4em;
 }
 
 #interests {
-  width: 480px;
+  width: 300px;
 }
 
 #photosection {
@@ -141,12 +142,12 @@ h2, h3 {
 }
 
 #projects {
-  width: 380px;
+  width: 370px;
   height: auto;
 }
 
 #whyjapan {
-  width: 275px;
+  width: 220px;       /*275px;*/
   height: auto;
   /*margin-top: auto;*//*if want to not stretch*/
 }
@@ -219,7 +220,6 @@ footer p{
 }
 
 @media (max-width: 470px){ /*breakpoint for the column section*/
-
   #boxes section{
     max-width: 95%;
   }
