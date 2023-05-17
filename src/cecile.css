@@ -72,10 +72,10 @@ body {
 .colonne {
   display: flex;
   flex-flow: column wrap;
-  gap: 20px;
-  align-items: center;
-  justify-content: stretch;
   text-align: center;
+  gap: 20px; /*between the elements in the container, the icons and the text*/
+  justify-content: center;
+  align-items: center;
 }
 
 .line {
@@ -98,7 +98,7 @@ body {
   flex-flow: column wrap;
 }
 
-h3 {
+h2, h3 {
   color: white;
 }
 
@@ -109,8 +109,6 @@ h3 {
 #boxes section {
   /*margin: 0 20px;*/
   background-color: #05daf6;
-  max-width: 500px;
-  height: auto;
   border-radius: 20px;
   padding: 1.5em 1.5em;
   font-size: 0.8em;
@@ -151,13 +149,12 @@ h3 {
 }
 
 #interests {
-  width: fit-content;
-  height: auto;
+  width: 480px;
 }
 
 #photosection {
-  width: 480px; /*is it useful or by default?*/
-  margin-top: auto;
+  width: 480px; /*37.5em equivalent*/
+  margin-top: auto; /*takes position at the end of the available vertical space*/
 }
 
 #pictures {
@@ -262,6 +259,10 @@ footer h2 {
   color: #aee1e7;
 }
 
+footer p{
+  margin-bottom: 0.5em;
+}
+
 .copyright {
   display: flex;
   justify-content: center;
@@ -272,6 +273,23 @@ footer h2 {
 }
 
 /*---Responsive styles---*/
+
+@media (max-width: 470px){ /*breakpoint for the column section*/
+  /*#boxes section{
+    max-width: 95%;
+    height: auto;
+  }*/
+  #interests{
+    max-width: 95%;
+    height: auto;
+  }
+  #photosection{
+    max-width: 95%;
+    height: auto;
+  }
+}
+
+/*BEFORE CHANGE LAYOUT*/
 /*
 @media (max-width: 335px) {
 
