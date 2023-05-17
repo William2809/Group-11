@@ -108,7 +108,7 @@ h2, h3 {
 }
 
 #boxes section {
-  /*margin: 0 20px;*/
+  margin: 0 20px;
   background-color: #05daf6;
   border-radius: 20px;
   padding: 1.5em 1.5em;
@@ -274,6 +274,12 @@ footer p{
 }
 
 /*---Responsive styles---*/
+
+@media (max-width: 962px){ /*breakpoint because images are not on same row as country section*/
+  .small_picture{
+    width: 30%;
+  }
+}
 
 @media (max-width: 470px){ /*breakpoint for the column section*/
 
