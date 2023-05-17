@@ -193,8 +193,8 @@ footer p {
   }
 }
 
-@media (max-width: 470px){
-  /*breakpoint for the column section*/
+@media (max-width: 521px){
+  /*breakpoint because every section is in one column*/
   
   #boxes section{
     width: 95%;
