@@ -211,7 +211,7 @@ footer p {
   /*breakpoint for the column section*/
   
   #boxes section{
-    max-width: 95%;
+    width: 95%;
   }
 }
 
