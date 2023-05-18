@@ -15,7 +15,6 @@ body {
 /*------CONTENT------*/
 
 #greeting {
-	/*à savoir expliquer*/
 	background: linear-gradient(
 		269.14deg,
 		#c605f7 8.23%,
@@ -141,12 +140,6 @@ h3 {
   width: 220px;       /*275px;*/
   height: auto;
   /*margin-top: auto;*//*if want to not stretch*/
-}
-
-#cat {
-	/*display: flex;
-  flex-direction: column;
-  justify-content:space-around;*/
 }
 
 #textcat {
